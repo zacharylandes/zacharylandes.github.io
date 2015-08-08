@@ -1,0 +1,164 @@
+
+*{
+ font-family: 'metamorphous';
+
+}
+
+
+#header{
+    width:100%;
+    height:20%;
+    background-color : #265b6a;
+   top: -2%;
+    padding:0;
+    border:0;
+    position:relative;
+    overflow: hidden;
+
+
+
+}
+
+h1{
+    letter-spacing:10px;
+    font-size: 4em;
+    color: black;
+    text-align:center;
+    position:relative;
+    top:30;
+    }
+
+
+
+#nav{
+    width:100%;
+    height:10%;
+    padding: 0;
+    border: 0;
+    background-color: #63939f;
+      overflow-x:hidden;
+    margin:0;
+    position:relative;
+    z-index:1;
+    }
+#nav li a{
+    display:inline-block;
+    margin:0px 25px;
+    list-style-type: none;
+    color:black;
+    font-size: 1.4em;
+    float:right;
+    }
+a:link{
+        color: black;
+        list-style:none
+        float:right;}
+a:visited{
+        color: black;
+        list-style:none
+        float:right;}
+
+#left{
+    background-color:#022a35;
+    width:15%;
+    float:left;
+    padding:0;
+    height:100%;
+    margin-top:-2%;
+
+
+        }
+#button {
+  background-color:#63939f;
+  border:none;
+  color: black;
+  margin:10px 0;
+  width: 10em;
+  padding:1em;
+  opacity:;
+}
+#button1 {
+  background-color:#63939f;
+  border:none;
+  color: black;
+  margin:10px 0;
+  width: 10em;
+  padding:1em;
+  opacity:;
+}#button2 {
+  background-color:#63939f;
+  border:none;
+  color: black;
+  margin:10px 0;
+  width: 10em;
+  padding:1em;
+  opacity:;
+}
+
+#pic {max-width:25%; margin-left:25%; float:left;
+
+        }
+li      {
+            list-style:none;}
+
+#middle{
+    width:85%;
+    padding-bottom: 6%;
+    border: 0;
+    font-size:1em;
+    margin:0;
+    height:100%;
+    background-color:#447684;
+    display:inline-block; }
+
+    #pict1, #pict2, #pict3, #pict4, #pict5, #pict6{
+      max-width: 50%;
+
+
+
+    }
+
+
+img{
+      max-width: 15%;
+     position:relative;
+      margin:5%;
+
+                    }
+
+
+
+    #pic1{max-width:70%;
+    margin: 15%;
+    float:left;
+        }
+ #pic2{max-width:70%;
+        margin: 15%
+        }
+        #pic3{max-width:70%;
+        margin: 15%}
+        #pic4{max-width:70%;
+        margin: 15%}
+        .caption{
+           text-align:center;
+           text-wrap:none;
+            }
+
+
+
+
+
+#right{
+margin:0;
+padding-bottom: 232%;
+border: 0;
+float:right;
+font-size:14px;
+height: 100%;
+width:15%;
+background-color:#022a35;
+opacity: .9;
+position:relative;
+overflow:hidden;
+clear:both
+
