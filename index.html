@@ -1,60 +1,125 @@
 <!DOCTYPE html>
 <html>
   <head>
-        <link type="text/css" rel="stylesheet" href="main.css"/>
-     <link href='http://fonts.googleapis.com/css?family=Metamorphous' rel='stylesheet' type='text/css'>
-    <meta name = "viewport" content = "width=device -width, initial-scale = 1.0" ></meta>
-    <title>EDA first</title>
-
-        <script type = "text/javascript">
-
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <link href='http://fonts.googleapis.com/css?family=Metamorphous' rel='stylesheet' type='text/css'>
+        <title>EDA first</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type = "text/javascript">
         function intro(){
         var hi =  document.getElementById('introduction');
-        hi.style.display = 'initial';
-        var img = document.getElementById('pic');
-        img.style.display = 'none';
+        hi.style.display = 'initial';}
+        function uName (){
+          var numb = prompt(" How many atoms are there in the universe?");
+          alert ("Sorry, there are not " + numb + " atoms. How could we ever know how many atoms there are in the universe?");}
+        function shake(){
+          var hi =  document.getElementById('introduction');
+          hi.style.display = 'none';
+          var img = document.getElementById('p1');
+          img.style.display = 'initial';
+          left = document.getElementById("middle");
+          left.style.backgroundColor = "#bfbfbf";
+          left = document.getElementById("header");
+          left.style.backgroundColor = "#000000";
+          left = document.getElementById("nav");
+          left.style.backgroundColor = "#ffffff";
+          left = document.getElementById("right");
+          left.style.backgroundColor = "#494949";
+          left = document.getElementById("left");
+          left.style.backgroundColor = "#494949";
+          left = document.getElementById("h1");
+          left.style.color = "white";
+          left = document.getElementById("button");
+          left.style.backgroundColor = "#ffffff";
+          left = document.getElementById("button1");
+          left.style.backgroundColor = "#ffffff";
+          left = document.getElementById("button2");
+          left.style.backgroundColor = "#ffffff";
+          left = document.getElementById("butright");
+          left.style.backgroundColor = "#ffffff";
+          left = document.getElementById("butleft");
+          left.style.backgroundColor = "#ffffff";
 
-      }
+           }
 
-function uName (){
 
-        var numb = prompt(" How many atoms are there in the universe?");
-        alert ("Sorry, there are not " + numb + " atoms. How could we ever know how many atoms there are in the universe?");}
-function shake(){
-    var hi =  document.getElementById('introduction');
-        hi.style.display = 'none';
-    var img = document.getElementById('pic');
-        img.style.display = 'initial';
-  left = document.getElementById("middle");
-  left.style.backgroundColor = "#bfbfbf";
-  left = document.getElementById("header");
-  left.style.backgroundColor = "#000000";
-   left = document.getElementById("nav");
-  left.style.backgroundColor = "#ffffff";
-  left = document.getElementById("right");
-  left.style.backgroundColor = "#494949";
-  left = document.getElementById("left");
-  left.style.backgroundColor = "#494949";
-    left = document.getElementById("h1");
-  left.style.color = "white";
-    left = document.getElementById("button");
-  left.style.backgroundColor = "#ffffff";
-    left = document.getElementById("button1");
-  left.style.backgroundColor = "#ffffff";
-  left = document.getElementById("button2");
-  left.style.backgroundColor = "#ffffff√";
+sliderInt = 1;
+sliderNext =2;
+$(document).ready(function(){
+$('#slider > #p1').fadeIn(50);
+startSlide();
+});
+ function startSlide(){
+count = $('#slider > img').size();
+loop =setInterval(function(){
+if (sliderNext > count){
+  sliderNext = 1;
+  sliderInt = 1;
+};
 
-        }
-    </script>
+$('#slider > img').fadeOut(400);
+$('#slider > img#p' + sliderNext).fadeIn(50);
+sliderInt = sliderNext;
+sliderNext = sliderNext + 1;
+
+
+},5000);
+
+ }
+
+ function prev(){
+var newSlide = sliderInt-1;
+showSlide(newSlide);
+
+ }
+
+ function next(){
+var newSlide = sliderInt+1;
+showSlide(newSlide);
+
+ }
+
+
+function stopLoop(){
+window.clearInterval(loop);
+
+
+}
+
+function showSlide(id){
+  stopLoop();
+  if (id > count){
+  id=1;}
+  else if(id < 1){
+id= count;
+}
+
+$('#slider > img').fadeOut(100);
+$('#slider > img#p' + id).fadeIn(300);
+sliderInt = id;
+sliderNext = id + 1;
+startSlide();
+
+
+}
+
+
+
+
+
+  </script>
+
+
 
   </head>
   <body>
   <div >
     <div id="header">
-            <h1 id = 'h1'>ZANNAHDU
-    </h1>
+            <h1 id = 'h1'>
+              ZANNAHDU
+            </h1>
 
-      </div>
+    </div>
   <div id="nav">
       <ul>
         <li><a href = "laos.html" > Laos</a></li>
@@ -63,34 +128,44 @@ function shake(){
         <li><a href = "bali.html" > Bali</a></li>
       </ul>
   </div>
-
-
-
-
+<div id = "meat">
      <div id = "left">
-     <ul>
-<div>
-     <button  id ="button" onclick="intro()" >Intro </button></div>
-  <div><button id = "button1" onclick="uName()">Quiz</button></div>
-  <div>
-     <button id = "button2" onclick="shake()">Shake Shake</button>
-        </ul> </div> </div>
+      <ul>
+
+          <div> <button  id ="button" onclick="intro()" >Intro </button></div>
+          <div><button id = "button1" onclick="uName()">Quiz</button></div>
+
+        <div>  <button id = "button2" onclick="shake()">Shake Shake</button></div>
+        </ul>
+
+      </div>
 <div id="middle">
        <div id = "introduction">
-    Hi! I just finished a 9 month journey through SE Asia, wanna see some pics?
+    Hola! I just finished a 9 month journey through SE Asia, here are some pics.
 
 </div>
-  <img id = "pic" src ="https://zannahdujournal.files.wordpress.com/2014/12/dscf0207_retouched.jpg?w=917">
 
+<div class = "wrapper">
+  <div id = "slider">
+  <img id = "p1" src ="https://zannahdujournal.files.wordpress.com/2014/12/dscf0207_retouched.jpg?w=917" alt = "Phong-Nga Caves in Vietnam">
+  <img id = "p2" src ="https://zannahdujournal.files.wordpress.com/2015/02/img_2043retouch.jpg?w=1000">
+<img id = "p3" src ="https://zannahdujournal.files.wordpress.com/2015/01/img_1543ouch.jpg?w=918">
+<img id = "p4" src ="https://zannahdujournal.files.wordpress.com/2014/12/8.jpg?w=918">
+<img id = "p5" src ="https://zannahdujournal.files.wordpress.com/2014/12/3.jpg?w=1000">
+</div>
+<div class = "buttons">
+<button id = "butleft" onclick = "prev();return false"> < </button>
+<button id = "butright" onclick = "next();return false"> > </button>
+</div>
+</div>
+
+</div>
 <div id="right">
-<a href = "bali.html"><img id = "pic1" src= "https://zannahdujournal.files.wordpress.com/2015/02/img_2043retouch.jpg?w=1000" ><div class = caption> Bali</div></a>
-<a href = "thailand.html"><img id = "pic2" src= "https://zannahdujournal.files.wordpress.com/2015/01/img_1543ouch.jpg?w=918"><div class = caption> Thailand</div></a>
-<a href = "vietnam.html"><img id = "pic3" src= "https://zannahdujournal.files.wordpress.com/2014/12/8.jpg?w=918"><div class = caption> Vietnam</div></a>
-<a href "laos.html"><img id = "pic4" src= "https://zannahdujournal.files.wordpress.com/2014/12/3.jpg?w=1000"><div class = caption> Laos</div></a>
-
-
-
+  <a href = "bali.html"><img id = "pic1" src= "https://zannahdujournal.files.wordpress.com/2015/02/img_2043retouch.jpg?w=1000" ><div class = "caption"> Bali</div></a>
+  <a href = "thailand.html"><img id = "pic2" src= "https://zannahdujournal.files.wordpress.com/2015/01/img_1543ouch.jpg?w=918"><div class = "caption"> Thailand</div></a>
+  <a href = "vietnam.html"><img id = "pic3" src= "https://zannahdujournal.files.wordpress.com/2014/12/8.jpg?w=918"><div class = "caption"> Vietnam</div></a>
+  <a href "laos.html"><img id = "pic4" src= "https://zannahdujournal.files.wordpress.com/2014/12/3.jpg?w=1000"><div class = "caption"> Laos</div></a>
+</div>
 </div>
   </body>
 </html>
-

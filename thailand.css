@@ -39,7 +39,7 @@ h1{
       overflow-x:hidden;
     margin:0;
     position:relative;
-    z-index:1;
+    z-index:0;
     }
 #nav li a{
     display:inline-block;
@@ -63,7 +63,7 @@ a:visited{
     width:15%;
     float:left;
     padding:0;
-    height:100%;
+    height:1000px;
     margin-top:-2%;
 
 
@@ -102,17 +102,18 @@ li      {
             list-style:none;}
 
 #middle{
-    width:85%;
-    padding-bottom: 6%;
+    width:84%;
     border: 0;
     font-size:1em;
     margin:0;
-    height:100%;
+    height:1000px;
     background-color:#447684;
-    display:inline-block; }
+    display:inline-block;
+    position: absolute;
+    z-index: -1}
 
     #pict1, #pict2, #pict3, #pict4, #pict5, #pict6{
-      max-width: 50%;
+      max-width: 20%;
 
 
 
@@ -149,16 +150,55 @@ img{
 
 
 #right{
-margin:0;
-padding-bottom: 205%;
+margin: 0;
 border: 0;
 float:right;
 font-size:14px;
-height: 100%;
+min-height: 1000px;
 width:15%;
 background-color:#022a35;
 opacity: .9;
 position:relative;
-overflow:hidden;
-clear:both
+}
 
+#overlay{
+
+background: black;
+width: 100%;
+height: 1250px;
+position: absolute;
+top:0;
+left:0;
+z-index: 1;
+opacity: .6;
+display: none;
+}
+#lb1, #lb2, #lb3, #lb4, #lb5, #lb6
+{max-width:45%;
+ margin:5% 0 0 25%;
+  position: absolute;
+  z-index: 2;
+  display: none;
+
+        }
+    #buttonl {
+      position: absolute;
+      z-index: 2;
+      width:120px;
+      height:40px;
+      border:none;
+      background-color: #397fdb;
+      font-size: 1.2em;
+      border-radius: 5px;
+    }
+    #buttonr {
+      position: absolute;
+      margin-left: 120px;
+      z-index: 2;
+      width:120px;
+      height:40px;
+      border:none;
+      background-color: #397fdb;
+      font-size: 1.2em;
+      border-radius: 5px;
+    }
