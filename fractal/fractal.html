@@ -4,27 +4,29 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src=  "fractal.js"></script>
+   <script src=  "randomColor.js"></script>
+
   <link rel="stylesheet" type="text/css" href="fractal.css">
 
 </head>
-<body style = "background-color: #D0D0D0 ">
+<body>
 
 
   <div id = "input">
        <label>Angle</label>
-   <input type="range" id="coreAngle" value="240">
+   <input type="range" id="coreAngle" min="1" max="260" value="3" step="1">
     <label>AngleChange</label>
-   <input type="range" id="anglechange" value="240">
+   <input type="range" id="anglechange" min="1" max="300" value="100" step="1">
     <label>Depth</label>
-    <input  type= "range"  id="depth" value="6";>
+    <input  type= "range"  id="depth" min="1" max="8" value="4" step="0.5">
     <label>Space Between Lines</label>
-    <input  type= "range"  id="lineLengthChange" value="4">
+    <input  type= "range"  id="lineLengthChange" min=".5" max="5" value="1" step="0.1">
     <label>Line Length Limit</label>
-    <input  type= "range"  id="lineLengthLimit" value="500">
+    <input  type= "range"  id="lineLengthLimit" min='30' max="800" value="700" step="1">
     <label>Number of Fractals</label>
-    <input  type= "range"  id="fractalTotal" value="500">
+    <input  type= "range"  id="fractalTotal" min="1" max="4000" value="300" step="10">
     <label>Duration</label>
-    <input  type= "range"  id="duration"value="200">
+    <input  type= "range"  id="duration" min=".01" max="200" value="20" step="0.1">
     <input type=button id = "click" onclick="Fractal()" value = "Fractalize">
 
   </div>

@@ -1,3 +1,4 @@
+
 var Fractal = function(coreAngle,anglechange,depth, lineLengthChange,lineLengthLimit,fractalTotal,duration){
    coreAngle = parseInt(document.getElementById('coreAngle').value)
    console.log("angle is " + coreAngle);
@@ -19,11 +20,12 @@ var Fractal = function(coreAngle,anglechange,depth, lineLengthChange,lineLengthL
   createCanvas.width = screenWidth;
   createCanvas.height = screenHeight;
   createCanvas.id = "canvas";
-  createCanvas.background = "#585555";
+  createCanvas.background = 'black';
   document.body.appendChild(createCanvas);
   var elem = document.getElementById('canvas');
   var context = elem.getContext('2d');
-  var colors1 = [ getRandomColor(),getRandomColor()]
+  var colors1 =[getRandomColor(3),getRandomColor(3),getRandomColor(3),getRandomColor(3),getRandomColor(3)]
+
   var colorCount= 0;
   var lineLength = 10;
   var angle = 0;
@@ -48,7 +50,7 @@ var Fractal = function(coreAngle,anglechange,depth, lineLengthChange,lineLengthL
       context.lineTo(x2, y2);
     }
     function drawTree(x1, y1, angle, depth){
-      context.strokeStyle = colors1[colorCount]
+      context.strokeStyle = colors1[colorCount];
       context.lineWidth = 1;
       var deg_to_rad = Math.PI / coreAngle ;
       if (depth !== 0){
@@ -66,17 +68,20 @@ var Fractal = function(coreAngle,anglechange,depth, lineLengthChange,lineLengthL
       if (lineLength === lineLengthLimit){lineLength=0};
       if (fractalCount===fractalTotal){
         clearInterval(fractalInterval);
-        context.fillStyle = "#D0D0D0";
+        context.fillStyle = "black";
         context.fillRect(0, 0, screenWidth,screenHeight);
         Fractal(coreAngle,anglechange,depth, lineLengthChange,lineLengthLimit,fractalTotal,duration);
        }
     }
-    function getRandomColor() {
-      function c() {
-        return Math.floor(Math.random()*200).toString(16)
-      }
-      return "#"+c()+c()+c();
-    }
+  function getRandomColor(brightness){
+    //6 levels of brightness from 0 to 5, 0 being the darkest
+    var rgb = [Math.random() * 256, Math.random() * 256, Math.random() * 256];
+    var mix = [brightness*51, brightness*51, brightness*51]; //51 => 255/5
+    var mixedrgb = [rgb[0] + mix[0], rgb[1] + mix[1], rgb[2] + mix[2]].map(function(x){ return Math.round(x/2.0)})
+    return "rgb(" + mixedrgb.join(",") + ")";
+  }
+
+
 
 
 }

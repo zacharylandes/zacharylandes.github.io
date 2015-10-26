@@ -5,6 +5,7 @@ font-family:
 border-radius: 10px;
 z-index: -200;
 
+
 }
 input {
 border-radius: 10px;
@@ -19,5 +20,20 @@ font-size: 20
 }
 #canvas{
 height: 100%;
+z-index: 1
+position:relative;
 
+}
+
+label{
+color:white;
+
+}
+body{
+  background-color: black
+}
+
+input[type="range"] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 10%; /* Specific width is required for Firefox. */
 }
