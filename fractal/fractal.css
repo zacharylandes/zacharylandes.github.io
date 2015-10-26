@@ -1,0 +1,23 @@
+
+#input{
+font-family:
+'Orbitron';
+border-radius: 10px;
+z-index: -200;
+
+}
+input {
+border-radius: 10px;
+width: 100;
+}
+#click {
+border-radius: 10px;
+width: 230;
+font-family:
+'Orbitron';
+font-size: 20
+}
+#canvas{
+height: 100%;
+
+}
