@@ -8,20 +8,23 @@
 
 </head>
 <body style = "background-color: #D0D0D0 ">
+
+
   <div id = "input">
     <label>Angle</label>
-    <input  type= text  id="anglechange"/>
+  <input type="range" id="anglechange" value="160"/>
     <label>Depth</label>
-    <input  type= text  id="depth"/>
+  <input type="range" id="depth" value="10">
     <label>Space Between Lines</label>
-    <input  type= text  id="lineLengthChange"/>
+  <input type="range" id="lineLengthChange" value="10"/>
     <label>Line Length Limit</label>
-    <input  type= text  id="lineLengthLimit"/>
+   <input type="range" id="lineLengthLimit" value="500"/>
     <label>Number of Fractals</label>
-    <input  type= text  id="fractalTotal"/>
+     <input type="range" id="fractalTotal" value="500"/>
     <label>Duration</label>
-    <input  type= text  id="duration"/>
+     <input type="range" id="duration" value="40"/>
     <input type=button id = "click" onclick="Fractal()" value = "Fractalize">
+
   </div>
 
 

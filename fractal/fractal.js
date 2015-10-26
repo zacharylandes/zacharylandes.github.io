@@ -1,10 +1,15 @@
 var Fractal = function(anglechange,depth, lineLengthChange,lineLengthLimit,fractalTotal,duration){
-  anglechange = parseInt(document.getElementById('anglechange').value)
-  depth = parseInt(document.getElementById('depth').value)
-  lineLengthChange = parseInt(document.getElementById('lineLengthChange').value)
-  lineLengthLimit = parseInt(document.getElementById('lineLengthLimit').value)
-  fractalTotal = parseInt(document.getElementById('fractalTotal').value)
-  duration= parseInt(document.getElementById('duration').value )
+  anglechange = document.getElementById('anglechange').value
+  console.log(anglechange)
+  depth = document.getElementById('depth').value.step="1";
+  console.log(depth)
+  lineLengthChange = document.getElementById('lineLengthChange').value
+   console.log(lineLengthChange)
+  lineLengthLimit = document.getElementById('lineLengthLimit').value
+   console.log(lineLengthLimit)
+  fractalTotal = document.getElementById('fractalTotal').value
+   console.log(fractalTotal)
+  duration= document.getElementById('duration').value
 
   var screenWidth = $('body').width()
   var screenHeight = $('body').height()
@@ -16,12 +21,14 @@ var Fractal = function(anglechange,depth, lineLengthChange,lineLengthLimit,fract
   document.body.appendChild(createCanvas);
   var elem = document.getElementById('canvas');
   var context = elem.getContext('2d');
-  var colors1 = [ getRandomColor(), getRandomColor(), getRandomColor(),getRandomColor()]
+  var colors1 = [ getRandomColor(), getRandomColor(),getRandomColor(),getRandomColor()]
   var colorCount= 0;
   var lineLength = 10;
   var angle = 0;
-  var canvasx = screenWidth *.5;
-  var canvasy = screenHeight *.5;
+  var canvasx = Math.floor((Math.random() * (screenWidth*.5 -400)) + 400);
+
+  var canvasy = Math.floor((Math.random() * (screenHeight*.5 -400)) + 400);
+
   var fractalCount = 0;
   var fractalInterval = setInterval(function(){changeTree(anglechange,depth, lineLengthChange,lineLengthLimit,fractalTotal)}, duration)
   function changeTree(anglechange,depth, lineLengthChange,lineLengthLimit,fractalTotal){
@@ -41,7 +48,7 @@ var Fractal = function(anglechange,depth, lineLengthChange,lineLengthLimit,fract
     function drawTree(x1, y1, angle, depth){
       context.strokeStyle = colors1[colorCount]
       context.lineWidth = 1;
-      var deg_to_rad = Math.PI / 3 ;
+      var deg_to_rad = Math.PI / 14 ;
       if (depth !== 0){
         var x2 = x1 + (Math.cos(angle * deg_to_rad) * depth * lineLength );
         var y2 = y1 + (Math.sin(angle * deg_to_rad) * depth * lineLength );
@@ -58,13 +65,12 @@ var Fractal = function(anglechange,depth, lineLengthChange,lineLengthLimit,fract
         clearInterval(fractalInterval);
         context.fillStyle = "#D0D0D0";
         context.fillRect(0, 0, screenWidth,screenHeight);
-
         Fractal(anglechange,depth, lineLengthChange,lineLengthLimit,fractalTotal,duration);
        }
     }
     function getRandomColor() {
       function c() {
-        return Math.floor(Math.random()*165).toString(16)
+        return Math.floor(Math.random()*250).toString(16)
       }
       return "#"+c()+c()+c();
     }
