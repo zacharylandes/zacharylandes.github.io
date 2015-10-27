@@ -1,0 +1,73 @@
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src=  "fractal.js"></script>
+  <script src=  "randomColor.js"></script>
+  <script src=  "click.js"></script>
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+
+  <link rel="stylesheet" type="text/css" href="fractal.css">
+
+</head>
+<body>
+
+     <div class="input">
+  <div class = 'toggle'>
+    <label>Angle</label>
+    <p>
+      <input type="range" id="coreAngle" min="1" max="260" value="3" step="1">
+    </p>
+  </div>
+  <div class = 'toggle'>
+    <label>AngleChange</label>
+    <p>
+      <input type="range" id="anglechange" min="1" max="300" value="100" step="1">
+    </p>
+  </div>
+  <div class = 'toggle'>
+    <label>Depth</label>
+    <p>
+      <input  type= "range"  id="depth" min="1" max="8" value="4" step="0.5">
+    </p>
+  </div>
+  <div class = 'toggle'>
+    <p>
+      <label>Line Thickness</label>
+    </p>
+    <input  type= "range"  id="lineThickness" min=".5" max="5" value="1" step="0.1">
+  </div>
+  <div class = 'toggle'>
+    <p>
+      <label>Line Length Limit</label>
+    </p>
+    <input  type= "range"  id="lineLengthLimit" min='30' max="800" value="125" step="1">
+  </div>
+  <div class = 'toggle'>
+    <p>
+      <label>Number of Fractals</label>
+    </p>
+    <input  type= "range"  id="fractalTotal" min="1" max="4000" value="300" step="10">
+  </div>
+  <div class = 'toggle'>
+    <p>
+     <label>Duration</label>
+   </p>
+   <input  type= "range"  id="duration" min=".01" max="200" value="20" step="0.1">
+ </div>
+ <div class = 'toggle'>
+   <p>
+     <input type=button id = "click" onclick="Fractal()" value = "Fractalize" >
+   </p>
+      </div>
+    </div>
+   <div>
+    <div id = 'fractal'>
+  </div>
+
+
+
+    <!-- <button id = "button" width="100" height="100">Clickeroni</button> -->
+  </body>
+  </html>
