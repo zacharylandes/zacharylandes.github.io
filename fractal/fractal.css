@@ -1,15 +1,17 @@
+div{
+z-index: -10;
+opacity: .8
+position: relative;
 
+}
 #input{
 font-family:
 'Orbitron';
 border-radius: 10px;
-z-index: -200;
+z-index: -10;
+opacity: .8
+position: relative;
 
-
-}
-input {
-border-radius: 10px;
-width: 50;
 }
 #click {
 border-radius: 10px;
@@ -20,8 +22,9 @@ font-size: 20
 }
 #canvas{
 height: 100%;
-z-index: 1
-position:relative;
+z-index: 1;
+position: absolute;
+
 
 }
 
@@ -33,7 +36,3 @@ body{
   background-color: black
 }
 
-input[type="range"] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 10%; /* Specific width is required for Firefox. */
-}
