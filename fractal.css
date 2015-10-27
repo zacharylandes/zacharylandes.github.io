@@ -1,0 +1,38 @@
+div{
+z-index: -10;
+opacity: .8
+position: relative;
+
+}
+#input{
+font-family:
+'Orbitron';
+border-radius: 10px;
+z-index: -10;
+opacity: .8
+position: relative;
+
+}
+#click {
+border-radius: 10px;
+width: 230;
+font-family:
+'Orbitron';
+font-size: 20
+}
+#canvas{
+height: 100%;
+z-index: 1;
+position: absolute;
+
+
+}
+
+label{
+color:white;
+
+}
+body{
+  background-color: black
+}
+
