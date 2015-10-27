@@ -4,10 +4,11 @@ var Fractal = function(){
   //getting value from range input
    anglechange = parseInt(document.getElementById('anglechange').value)
    depth = parseInt(document.getElementById('depth').value)
-   lineLengthChange = parseInt(document.getElementById('lineLengthChange').value)
+   lineThickness = parseInt(document.getElementById('lineThickness').value)
    lineLengthLimit = parseInt(document.getElementById('lineLengthLimit').value)
    fractalTotal = parseInt(document.getElementById('fractalTotal').value)
    duration= parseInt(document.getElementById('duration').value )
+  // document.getElementById('click').style.background-color = getRandomColor();
   //setting up the canvas
    var screenWidth = $('body').width()
    var screenHeight = $('body').height()
@@ -16,7 +17,9 @@ var Fractal = function(){
    createCanvas.height = screenHeight;
    createCanvas.id = "canvas";
    createCanvas.background = 'black';
-    document.body.appendChild(createCanvas);
+   var fractaldiv = document.getElementById("fractal")
+   fractaldiv.appendChild(createCanvas);
+    // document.body.appendChild(createCanvas);
    var elem = document.getElementById('canvas');
    var context = elem.getContext('2d');
    //declaring variables
@@ -24,12 +27,12 @@ var Fractal = function(){
    var colorCount= 0;
    var lineLength = 10;
    var angle = 0;
-   var canvasx = Math.floor((Math.random() * (screenWidth*.5 -400)) + 400);
-   var canvasy = Math.floor((Math.random() * (screenHeight*.5 -400)) + 400);
+   var canvasx = Math.floor((Math.random() * (screenWidth*.5 -200)) + 400);
+   var canvasy = Math.floor((Math.random() * (screenHeight*.5 -200)) + 400);
    var fractalCount = 0;
-   var fractalInterval = setInterval(function(){changeTree(coreAngle,anglechange,depth, lineLengthChange,lineLengthLimit,fractalTotal)}, duration)
+   var fractalInterval = setInterval(function(){changeTree(coreAngle,anglechange,depth, lineThickness,lineLengthLimit,fractalTotal)}, duration)
    //printing a new branch at different angle
-  function changeTree(coreAngle,anglechange,depth, lineLengthChange,lineLengthLimit,fractalTotal){
+  function changeTree(coreAngle,anglechange,depth, lineThickness,lineLengthLimit,fractalTotal){
       context.beginPath();
       drawBranch(canvasx, canvasy, angle, depth);
       context.closePath();
@@ -37,7 +40,7 @@ var Fractal = function(){
       angle+=anglechange;
       colorCount +=1;
       depth+=1;
-      lineLength +=lineLengthChange;
+      lineLength +=1;
       fractalCount++;
         function drawTrunk(x1, y1, x2, y2){
             context.moveTo(x1, y1);
@@ -45,7 +48,7 @@ var Fractal = function(){
           }
         function drawBranch(x1, y1, angle, depth){
           context.strokeStyle = colors1[colorCount];
-          context.lineWidth = 1;
+          context.lineWidth = lineThickness;
           var deg_to_rad = Math.PI / coreAngle ;
           if (depth !== 0){
             var x2 = x1 + (Math.cos(angle * deg_to_rad) * depth * lineLength );
@@ -57,12 +60,13 @@ var Fractal = function(){
 
 
     }
+  if (lineLength=== lineLengthLimit){lineLength=30};
   if (colorCount=== 7){colorCount=0};
   if (fractalCount===fractalTotal){
     clearInterval(fractalInterval);
     context.fillStyle = "black";
     context.fillRect(0, 0, screenWidth,screenHeight);
-    Fractal(coreAngle,anglechange,depth, lineLengthChange,lineLengthLimit,fractalTotal,duration);
+    Fractal(coreAngle,anglechange,depth, lineThickness,lineLengthLimit,fractalTotal,duration);
   }
 }
   function getRandomColor(brightness){
