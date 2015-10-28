@@ -91,7 +91,7 @@ var Fractal = function(){
   if (document.getElementById('zoom').checked) {
     if (lineLength===lineLengthLimit){lineLength= 0};
     }
-  else{ if (lineLength=== 0){lineLength=250};
+  else{ if(lineLength === 0){lineLength=lineLengthLimit};
   }
   if (fractalCount===fractalTotal){
     clearInterval(fractalInterval);
