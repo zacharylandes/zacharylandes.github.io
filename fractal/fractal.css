@@ -37,11 +37,12 @@ height: 5%;
 
 }
 
-#canvas{
+#fractal{
 height: 100%;
 width: 100%;
 z-index: 1;
 display: inline;
+background: transparent;
 }
 
 label{
