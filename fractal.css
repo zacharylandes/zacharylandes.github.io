@@ -1,31 +1,50 @@
-div{
-z-index: -10;
+/*z-index: -10;
 opacity: .8
-position: relative;
+position: relative;*/
+/*display: inline-block;*/
+/*font-family:
+'Orbitron';
+opacity: .8;
+background: transparent;
+width: 10%;
+}*/
 
-}
-#input{
+.input{
+ position: absolute;
+ width: 8%;
 font-family:
 'Orbitron';
-border-radius: 10px;
-z-index: -10;
-opacity: .8
-position: relative;
-
+opacity: .8;
+background: transparent;
+width: 10%;
 }
+/*
+#fractal{
+  width:100%;
+  height: 100%;
+  float: right;
+
+}*/
 #click {
-border-radius: 10px;
-width: 230;
 font-family:
 'Orbitron';
-font-size: 20
+font-size: 2em;
+color: black;
+padding: 6%;
+border-radius: 80px;
+background: white;
+opacity: .7;
+border:none;
+height: 5%;
+
 }
-#canvas{
+
+#fractal{
 height: 100%;
+width: 100%;
 z-index: 1;
-position: absolute;
-
-
+display: inline;
+background: transparent;
 }
 
 label{
