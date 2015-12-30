@@ -14,9 +14,9 @@ body, .container {
 	height: 100%;
   background-repeat: repeat;
   background-attachment: fixed;
-	background-image:url(../images/banner.jpg);
+	background-image:url(../images/congruent_pentagon.png);
 }
-div,#banner, site-name, a,li, .active {
+div,#banner, site-name, a,li, .active, .btn {
 	color: #0D3F40;
 }
 .site-name {
@@ -273,11 +273,12 @@ blockquote {
 	transition: all 0.2s ease-in-out;
 }
 .btn-default {
-color: #ECC76E;
-background-color: #0D3F40;
+color: #0D3F40;
+border:none;
+background-color: transparent;
 }
 .btn-default:hover {
-color: #ECC76E;
+color: #0D3F40;
 }
 
 /* Collapse
@@ -301,7 +302,7 @@ color: #ECC76E;
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
 
 	border-top: none;
-	background-color: #fafafa
+	background-color:transparent;
 }
 .panel-heading a {
 	font-weight: 400;
@@ -315,7 +316,7 @@ color: #ECC76E;
 }
 .panel-heading a.collapsed {
 
-	background-color: #333333;
+	background-color: transparent;
 }
 .panel-heading a:after {
 	font-family: "FontAwesome";
@@ -333,8 +334,8 @@ color: #ECC76E;
 }
 .panel-heading a:hover {
 	text-decoration: none;
-	background-color: #55acee;
-	color: #ffffff;
+	background-color: transparent;
+	color: #0D3F40;
 }
 .panel-title a i {
 	padding-right: 10px;
@@ -527,7 +528,7 @@ textarea {
 	margin-bottom: 20px;
 }
 .isotope-item .btn-default {
-color: #ECC76E;
+color: #0D3F40;
 }
 .isotope-item .btn-default:hover {
 color: #0D3F40;
@@ -552,7 +553,7 @@ color: #0D3F40;
 	bottom: -1px;
 	left: 0;
 	right: -1px;
-	background-color: rgba(85, 172, 238, 0.9);
+	background-color: transparent;
 	cursor: pointer;
 	overflow: hidden;
 	opacity: 0;
