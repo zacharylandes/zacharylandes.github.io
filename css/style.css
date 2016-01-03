@@ -31,10 +31,17 @@ body {
 	float: left;
 	font-size: 3em;
 	width: 100%;
-	margin: auto;
+	margin-top: ;
 }
 row{
 	display: inline-block;
+}
+hr{
+		background-color: #0D3F40;
+		color: #0D3F40;
+		height: 3px;
+		width: 90%;
+		border: none;
 }
 h2 {
 	font-size: 28px;
@@ -64,7 +71,7 @@ ul li{
 .container-fluid{
 float: right;
 text-align: right;
-margin-top:-7%;
+margin-top:-11%;
 }
 .large {
 	font-size: 18px;
@@ -101,7 +108,14 @@ blockquote {
 .title {
 	margin-top: 0;
 }
+#fractalblurb{
+	background-color: #EBFDD4;
+	position: relative;
+	z-index: 1;
+	margin-top:-;
 
+
+}
 /* Layout
 ----------------------------------------------------------------------------- */
 .header {
@@ -271,6 +285,8 @@ blockquote {
 	-ms-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+	background-color: transparent;
+
 }
 .btn-default {
 color: #0D3F40;
@@ -279,6 +295,8 @@ background-color: transparent;
 }
 .btn-default:hover {
 color: #0D3F40;
+	background-color: #EBFDD4;
+
 }
 
 /* Collapse
@@ -397,10 +415,11 @@ textarea {
 .main-navigation .navbar-default {
 	background-color: transparent;
 	border: none;
+	margin-top: 0;
 
 }
 .main-navigation .navbar-default .navbar-nav > li > a {
-
+	margin-top: 0;
 	padding: 10px 20px;
 	font-size: 18px;
 	font-weight: 300;

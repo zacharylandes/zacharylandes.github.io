@@ -29,6 +29,11 @@
 
 		<!-- Custom css -->
 		<link href="css/custom.css" rel="stylesheet">
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 	</head>
 
 	<body class="no-trans">
@@ -43,16 +48,13 @@
 						<!-- header-left start -->
 						<!-- ================ -->
 						<div class="header-left clearfix">
-
 							<div class="site-name-and-slogan smooth-scroll">
 								<div class="site-name">Zachary Landes</div>
 								<div class="site-slogan">Javascript Developer</div>
 								<div class="site-slogan">Oakland, CA</div>
 								<div class="site-slogan">zach.g.landes@gmail.com</div>
 							</div>
-
 						</div>
-
 					</div>
 					<div class="col-md-8">
 						<div class="header-right clearfix">
@@ -61,17 +63,15 @@
 								<h1>Works in Progress</h1>
 							</div>
 								<nav class="navbar navbar-default" role="navigation">
-									<div class="container-fluid">
-
+								 <div class="container-fluid">
 									<div class="site-name-and-slogan smooth-scroll" id="navright">
-								<div class="site-name">With Affection for</div>
-								<div class="site-slogan">D3</div>
-								<div class="site-slogan">Meteor</div>
-								<div class="site-slogan">React</div>
-								<div class="site-slogan">Rails/Ruby</div>
-								<div class="site-slogan">You Name it.js</div>
-							</div>
+										<div class="site-name">With Affection for</div>
+										<div class="site-slogan">D3</div>
+										<div class="site-slogan">Meteor</div>
+										<div class="site-slogan">React</div>
+										<div class="site-slogan">Rails/Ruby</div>
 									</div>
+								 </div>
 								</nav>
 								<!-- navbar end -->
 
@@ -83,7 +83,9 @@
 
 					</div>
 				</div>
+				<hr>
 			</div>
+
 		</header>
 		<!-- header end -->
 
@@ -96,7 +98,6 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
 
-							<p class="lead text-center">Blargstein and Bloogstein</p>
 						</div>
 					</div>
 				</div>
@@ -122,19 +123,20 @@
 						<div class="isotope-container row grid-space-20">
 							<div class="col-sm-6 col-md-3 isotope-item web-design">
 								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/fractalsmall.png" alt="">
+									<div class="overlay-container" data-role="main" class="ui-content">
+										<a href = "http://zacharylandes.github.io/fractal.html" data-toggle="tooltip" title="Design your own fractal. Built in Javascript">
+										<img src="images/fractal.png" alt="">
 									</div>
-									<a  href = "http://zacharylandes.github.io/fractal.html"class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">Fractal Builder</a>
+									<a  href = "http://zacharylandes.github.io/fractal.html" class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">Fractal Builder</a>
 								</div>
 							</div>
 
 							<div class="col-sm-6 col-md-3 isotope-item app-development">
 								<div class="image-box">
 									<div class="overlay-container">
-										<img src="images/balancesmall.png" alt="">
+										<img src="images/balancing.png" alt="">
 									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">Balance in your life</a>
+									<a href="#" class="btn btn-default btn-block" data-toggle="tooltip" title="Visualize your actions to balance pleasure with achievement in your life. Built using D3,Meteor and React">Balance in your life</a>
 								</div>
 
 							</div>
@@ -142,33 +144,20 @@
 							<div class="col-sm-6 col-md-3 isotope-item web-design">
 								<div class="image-box">
 									<div class="overlay-container">
-										<img src="images/bookit.png" alt="">
+										<a href = "http://ruru-2015.github.io/book-it-client-frontend/"data-toggle="tooltip" title="Book tables at restaurants online, no talking necessary. Built in Angular with a Rails API">
+										<img src="images/bookitbig.png" alt="">
 									</div>
-									<a href = "http://ruru-2015.github.io/book-it-client-frontend/#/"class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">Book It!</a>
+									<a href = "http://ruru-2015.github.io/book-it-client-frontend/" class="btn btn-default btn-block"  data-target="#project-3">Book It!</a>
 								</div>
 
 							</div>
-
 							<div class="col-sm-6 col-md-3 isotope-item site-building">
 								<div class="image-box">
 									<div class="overlay-container">
-										<img src="images/naturehack.png" alt="">
+										<a href = "sarah-arrrgh.github.io/naturehack" data-toggle="tooltip" title="Visualize New Zealand's Flora and Fauna. Built in Javascript for Naturehack, a 24-hour hackathon that took place in the woods of Wellington, NZ.">
+										<img src="images/tax.png" alt="">
 									</div>
-									<a href = "sarah-arrrgh.github.io/naturehack" class="btn btn-default btn-block" data-toggle="modal" data-target="#project-4">Taxon/Taxoff</a>
-								</div>
-
-							</div>
-
-							<div class="col-sm-6 col-md-3 isotope-item app-development">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/portfolio-5.jpg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-5">
-											<i class="fa fa-search-plus"></i>
-											<span>App Development</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-5">Project Title</a>
+									<a href="sarah-arrrgh.github.io/naturehack" class="btn btn-default btn-block" data-toggle="modal" data-target="#project-4">Taxon/Taxoff</a>
 								</div>
 
 							</div>
@@ -187,63 +176,8 @@
 
 							</div>
 
-							<div class="col-sm-6 col-md-3 isotope-item site-building">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/portfolio-7.jpg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-7">
-											<i class="fa fa-search-plus"></i>
-											<span>Site Building</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-7">Project Title</a>
-								</div>
 
 
-							</div>
-
-							<div class="col-sm-6 col-md-3 isotope-item web-design">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/portfolio-8.jpg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-8">
-											<i class="fa fa-search-plus"></i>
-											<span>Web Design</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-8">Project Title</a>
-								</div>
-
-							</div>
-
-							<div class="col-sm-6 col-md-3 isotope-item web-design">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/portfolio-9.jpg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-9">
-											<i class="fa fa-search-plus"></i>
-											<span>Web Design</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-9">Project Title</a>
-								</div>
-
-							</div>
-
-							<div class="col-sm-6 col-md-3 isotope-item site-building">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="images/portfolio-10.jpg" alt="">
-										<a class="overlay" data-toggle="modal" data-target="#project-10">
-											<i class="fa fa-search-plus"></i>
-											<span>Site Building</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-10">Project Title</a>
-								</div>
-
-
-							</div>
 
 						</div>
 						<!-- portfolio items end -->
