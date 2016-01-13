@@ -23,7 +23,7 @@ div,#banner, site-name, a,li, .active, .btn {
 
 }
 body {
-	font-size: 15px;
+	font-size: 1.7em;
 	line-height: 1.50;
 	position: relative;
 }
@@ -147,6 +147,7 @@ blockquote {
     padding : 5px;
     width:300%;
 }
+
 /* Layout
 ----------------------------------------------------------------------------- */
 .header {
