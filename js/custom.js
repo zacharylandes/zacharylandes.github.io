@@ -21,7 +21,23 @@ $(".aboutheader").click(function () {
         //change text of header based on visibility of content div
         $aboutheader.text(function () {
             //change text based on condition
-            return $aboutcontent.is(":visible") ? "Collapse" : "Expand";
+            return $aboutcontent.is(":visible") ? "Less" : "About";
+        });
+    });
+
+});
+$(".linkheader").click(function () {
+
+    $linkheader = $(this);
+    //getting the next element
+    $linkcontent = $linkheader.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $linkcontent.slideToggle(500, function () {
+        //execute this after slideToggle is done
+        //change text of header based on visibility of content div
+        $linkheader.text(function () {
+            //change text based on condition
+            return $linkheader.is(":visible") ? "Less" : "More";
         });
     });
 
