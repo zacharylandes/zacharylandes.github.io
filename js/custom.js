@@ -37,7 +37,7 @@ $(".linkheader").click(function () {
         //change text of header based on visibility of content div
         $linkheader.text(function () {
             //change text based on condition
-            return $linkheader.is(":visible") ? "Less" : "More";
+            return $linkcontent.is(":visible") ? "Less" : "Resume";
         });
     });
 

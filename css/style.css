@@ -10,7 +10,7 @@ File Description:Main CSS file of the template */
 ----------------------------------------------------------------------------- */
 
 body, .container {
-  font-family: 'Sigmar One', cursive;
+font-family: 'Alegreya Sans SC', sans-serif;
 	height: 100%;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -31,7 +31,7 @@ body {
 	float: left;
 	font-size: 3em;
 	width: 100%;
-	margin-left: 3% ;
+	margin-left: 8% ;
 }
 row{
 	display: inline-block;
@@ -124,7 +124,7 @@ blockquote {
     width:100%;
 }
 .aboutcontainer .aboutheader {
-    background-color:#d3d3d3;
+
     padding: 2px;
     cursor: pointer;
     font-weight: bold;
@@ -133,11 +133,11 @@ blockquote {
     display: none;
     padding : 5px;
     width:300%;
+    border-left: 1px solid #b3b3b3;
 }
 
-
 .aboutcontainer .linkheader {
-    background-color:#d3d3d3;
+
     padding: 2px;
     cursor: pointer;
     font-weight: bold;
