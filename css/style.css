@@ -10,17 +10,17 @@ File Description:Main CSS file of the template */
 ----------------------------------------------------------------------------- */
 
 body, .container {
-	font-family: 'Fugaz One', sans-serif;
+  font-family: 'Sigmar One', cursive;
 	height: 100%;
   background-repeat: repeat;
   background-attachment: fixed;
-	background-image:url(../images/congruent_pentagon.png);
+	background-image:url(../images/darkshadows.gif);
 }
 div,#banner, site-name, a,li, .active, .btn {
-	color: #0D3F40;
+	color: #b3b3b3;
 }
 .site-name {
-	font-family: 'Fugaz One', sans-serif;
+
 }
 body {
 	font-size: 15px;
@@ -31,15 +31,15 @@ body {
 	float: left;
 	font-size: 3em;
 	width: 100%;
-	margin-top: ;
+	margin-left: 3% ;
 }
 row{
 	display: inline-block;
 }
 hr{
-		background-color: #0D3F40;
+		background-color: #b3b3b3;
 		color: #0D3F40;
-		height: 3px;
+		height: 2px;
 		width: 90%;
 		border: none;
 }
@@ -71,7 +71,7 @@ ul li{
 .container-fluid{
 float: right;
 text-align: right;
-margin-top:-11%;
+margin-top:-9.5%;
 }
 .large {
 	font-size: 18px;
@@ -109,12 +109,30 @@ blockquote {
 	margin-top: 0;
 }
 #fractalblurb{
-	background-color: #EBFDD4;
+	background-color: #b3b3b3;
 	position: relative;
 	z-index: 1;
 	margin-top:-;
 
 
+}
+.aboutcontainer {
+    width:10%;
+    border:1px solid #b3b3b3;
+   margin-top: 20%;
+}
+.aboutcontainer div {
+    width:100%;
+}
+.aboutcontainer .aboutheader {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.aboutcontainer .aboutcontent {
+    display: none;
+    padding : 5px;
 }
 /* Layout
 ----------------------------------------------------------------------------- */
@@ -127,6 +145,7 @@ blockquote {
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
+
 .banner {
 	width: 100%;
 	height: 100%;
@@ -289,12 +308,12 @@ blockquote {
 
 }
 .btn-default {
-color: #0D3F40;
+color: #b3b3b3;
 border:none;
 background-color: transparent;
 }
 .btn-default:hover {
-color: #0D3F40;
+color: #b3b3b3;
 	background-color: #EBFDD4;
 
 }
@@ -353,7 +372,7 @@ color: #0D3F40;
 .panel-heading a:hover {
 	text-decoration: none;
 	background-color: transparent;
-	color: #0D3F40;
+	color: #b3b3b3;
 }
 .panel-title a i {
 	padding-right: 10px;
@@ -416,6 +435,7 @@ textarea {
 	background-color: transparent;
 	border: none;
 	margin-top: 0;
+	width: 100%;
 
 }
 .main-navigation .navbar-default .navbar-nav > li > a {
@@ -465,7 +485,7 @@ textarea {
 
 }
 .fixed-header-on .site-name {
-	font-size: 24px;
+	font-size: .8em;
 }
 .fixed-header-on .logo {
 	-webkit-transform: scale(0.8);
@@ -505,7 +525,7 @@ textarea {
 	float: left;
 }
 .site-name {
-	font-size: 30px;
+	font-size: 1.4em;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -547,10 +567,10 @@ textarea {
 	margin-bottom: 20px;
 }
 .isotope-item .btn-default {
-color: #0D3F40;
+color: #b3b3b3;
 }
 .isotope-item .btn-default:hover {
-color: #0D3F40;
+color: #b3b3b3;
 }
 @media (max-width:480px) {
 	.filters .nav-pills > li {

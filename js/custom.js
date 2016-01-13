@@ -8,4 +8,22 @@
  */
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
+
+
+$(".aboutheader").click(function () {
+
+    $aboutheader = $(this);
+    //getting the next element
+    $aboutcontent = $aboutheader.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $aboutcontent.slideToggle(500, function () {
+        //execute this after slideToggle is done
+        //change text of header based on visibility of content div
+        $aboutheader.text(function () {
+            //change text based on condition
+            return $aboutcontent.is(":visible") ? "Collapse" : "Expand";
+        });
+    });
+
+});
 });
