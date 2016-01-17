@@ -22,6 +22,9 @@ div,#banner, site-name, a,li, .active, .btn {
 .site-name {
 
 }
+#headline{
+	display:inline-block;
+}
 body {
 	font-size: 1.7em;
 	line-height: 1.50;
