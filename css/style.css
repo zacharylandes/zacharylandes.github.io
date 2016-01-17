@@ -15,34 +15,41 @@ font-family: 'Alegreya Sans SC', sans-serif;
   background-repeat: repeat;
   background-attachment: fixed;
 	background-image:url(../images/darkshadows.gif);
+	font-weight:300;
 }
 div,#banner, site-name, a,li, .active, .btn {
 	color: #b3b3b3;
 }
-.site-name {
-
+td{
+	padding:none;
 }
 #headline{
-	display:inline-block;
+	width:1px;
+	padding:  10px;
+	white-space: nowrap;
+	font-size: 2.3em;
+
+}
+#sideline{
+	width:1px;
+	white-space: nowrap;
+	font-size: 1.7em;
+	font-weight:300;
 }
 body {
 	font-size: 1.7em;
 	line-height: 1.50;
 	position: relative;
 }
- h1 {
-	float: left;
-	font-size: 3em;
-	width: 100%;
-	margin-left: 8% ;
+.bullets{
+	font-size: 1.5em;\
+	font-weight: 300;
 }
-row{
-	display: inline-block;
-}
+
 hr{
 		background-color: #b3b3b3;
 		color: #0D3F40;
-		height: 2px;
+		height: 1px;
 		width: 90%;
 		border: none;
 }
@@ -122,34 +129,24 @@ blockquote {
 .aboutcontainer {
     width:15%;
     margin-top: 20%;
+    padding: 2px;
+    cursor: pointer;
 }
 .aboutcontainer div {
     width:100%;
 }
-.aboutcontainer .aboutheader {
-
+.aboutcontainer .aboutheader, introheader, linkheader{
     padding: 2px;
     cursor: pointer;
     font-weight: bold;
 }
-.aboutcontainer .aboutcontent {
+.aboutcontainer .aboutcontent, .introcontent, .linkcontent {
     display: none;
     padding : 5px;
     width:300%;
     border-left: 1px solid #b3b3b3;
 }
 
-.aboutcontainer .linkheader {
-
-    padding: 2px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.aboutcontainer .linkcontent {
-    display: none;
-    padding : 5px;
-    width:300%;
-}
 
 /* Layout
 ----------------------------------------------------------------------------- */
