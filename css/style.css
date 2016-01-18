@@ -25,10 +25,14 @@ td{
 }
 #headline{
 	width:1px;
-	padding:  10px;
+	padding-top:  10px ;
 	white-space: nowrap;
 	font-size: 2.3em;
-
+}
+.tagline{
+	width:1px;
+	white-space: nowrap;
+	font-size: 1em;
 }
 #sideline{
 	width:1px;
@@ -135,15 +139,17 @@ blockquote {
 .aboutcontainer div {
     width:100%;
 }
-.aboutcontainer .aboutheader, introheader, linkheader{
+.aboutcontainer .aboutheader, .introheader, .linkheader{
     padding: 2px;
     cursor: pointer;
     font-weight: bold;
 }
+
 .aboutcontainer .aboutcontent, .introcontent, .linkcontent {
     display: none;
     padding : 5px;
     width:300%;
+    height: 300%;
     border-left: 1px solid #b3b3b3;
 }
 
@@ -327,8 +333,8 @@ border:none;
 background-color: transparent;
 }
 .btn-default:hover {
-color: #b3b3b3;
-	background-color: #EBFDD4;
+	color: #000000;
+	background-color: #b3b3b3;
 
 }
 
