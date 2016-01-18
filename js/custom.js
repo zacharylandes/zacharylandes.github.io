@@ -9,18 +9,18 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 
-$(".introheader").click(function () {
+$(".contactheader").click(function () {
 
-    $introheader = $(this);
+    $contactheader = $(this);
     //getting the next element
-    $introcontent = $introheader.next();
+    $contactcontent = $contactheader.next();
     //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-    $introcontent.slideToggle(500, function () {
+    $contactcontent.slideToggle(500, function () {
         //execute this after slideToggle is done
         //change text of header based on visibility of content div
-        $introheader.text(function () {
+        $contactheader.text(function () {
             //change text based on condition
-            return $introcontent.is(":visible") ? "Less" : "Intro";
+            return $contactcontent.is(":visible") ? "Less" : "Intro";
         });
     });
 

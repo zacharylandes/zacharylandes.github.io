@@ -139,13 +139,13 @@ blockquote {
 .aboutcontainer div {
     width:100%;
 }
-.aboutcontainer .aboutheader, .introheader, .linkheader{
+.aboutcontainer .aboutheader, .contactheader, .linkheader{
     padding: 2px;
     cursor: pointer;
     font-weight: bold;
 }
 
-.aboutcontainer .aboutcontent, .introcontent, .linkcontent {
+.aboutcontainer .aboutcontent, .contactcontent, .linkcontent {
     display: none;
     padding : 5px;
     width:300%;
