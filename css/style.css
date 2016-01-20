@@ -149,7 +149,7 @@ blockquote {
 }
 .aboutcontainer {
     width:15%;
-    margin-top: 20%;
+    margin-top: 15%;
     padding: 2px;
     cursor: pointer;
 }
@@ -159,7 +159,7 @@ blockquote {
 .aboutcontainer .aboutheader, .contactheader, .linkheader{
     padding: 2px;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .aboutcontainer .aboutcontent, .contactcontent, .linkcontent {
@@ -331,7 +331,7 @@ blockquote {
 ---------------------------------- */
 .btn {
 	padding: 8px 15px;
-	font-size: 14px;
+	font-size: 1.2em;
 	border-radius: 0px;
 	min-width: 160px;
 	text-align: center;
@@ -350,8 +350,7 @@ border:none;
 background-color: transparent;
 }
 .btn-default:hover {
-	color: black;
-	background-color: #b3b3b3;
+	font-size: 1.2em;
 
 }
 
