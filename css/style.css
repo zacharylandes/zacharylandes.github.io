@@ -351,6 +351,7 @@ background-color: transparent;
 }
 .btn-default:hover {
 	font-size: 1.2em;
+	color: black;
 
 }
 
