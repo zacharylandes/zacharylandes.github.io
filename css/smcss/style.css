@@ -1,82 +1,39 @@
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.social {
-  position: fixed;
-  top: 20px;
-}
-.social ul {
-margin-right: 500px;
-/*  -webkit-transform: translate(-570px, 0);
-  -moz-transform: translate(-570px, 0);
-  -ms-transform: translate(-570px, 0);
-  -o-transform: translate(-570px, 0);
-  transform: translate(-570px, 0);*/
-}
-.social ul li {
-  display: block;
-  margin: 5px;
-  background: rgba(0, 0, 0, 0.36);
-  width: 300px;
-  text-align: right;
-  padding: 10px;
-  -webkit-border-radius: 0 30px 30px 0;
-  -moz-border-radius: 0 30px 30px 0;
-  border-radius: 0 30px 30px 0;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-.social ul li:hover {
-  -webkit-transform: translate(110px, 0);
-  -moz-transform: translate(110px, 0);
-  -ms-transform: translate(110px, 0);
-  -o-transform: translate(110px, 0);
-  transform: translate(110px, 0);
-  background: rgba(255, 255, 255, 0.4);
-}
-.social ul li:hover a {
-  color: #000;
-}
-.social ul li:hover i {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.36);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-.social ul li i {
-  margin-left: 10px;
-  color: #000;
-  background: #fff;
-  padding: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  background: #ffffff;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+@import url("http://weloveiconfonts.com/api/?family=brandico");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: #25343F;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
+  background: #ddd;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+
+
+.social, .entypo-mail, .brandico-github {
+  width: 10px;
+  height: 50px;
+  margin: 15px 30px;
+  font-family: Entypo;
+  font-size: 28px;
+  text-align: center;
+  color: #555;
+  border-radius: 500px;
+  background: #eee;
+  cursor: pointer;
+}
+
+.social, .entypo-mail, .brandico-github {
+  box-shadow: #d2d2d2 1px 1px, #d2d2d2 2px 2px, lightgray 3px 3px, lightgray 4px 4px, lightgray 5px 5px, #d4d4d4 6px 6px, #d4d4d4 7px 7px, #d4d4d4 8px 8px, #d5d5d5 9px 9px, #d5d5d5 10px 10px, #d6d6d6 11px 11px, #d6d6d6 12px 12px, #d6d6d6 13px 13px, #d7d7d7 14px 14px, #d7d7d7 15px 15px, #d7d7d7 16px 16px;
+  text-shadow: #e2e2e2 1px 1px, #e3e3e3 2px 2px, #e3e3e3 3px 3px, #e4e4e4 4px 4px, #e5e5e5 5px 5px, #e5e5e5 6px 6px, #e6e6e6 7px 7px, #e6e6e6 8px 8px, #e7e7e7 9px 9px, #e8e8e8 10px 10px, #e8e8e8 11px 11px;
 }

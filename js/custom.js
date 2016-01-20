@@ -20,7 +20,7 @@ $(".contactheader").click(function () {
         //change text of header based on visibility of content div
         $contactheader.text(function () {
             //change text based on condition
-            return $contactcontent.is(":visible") ? "Less" : "Intro";
+            return $contactcontent.is(":visible") ? "Less" : "Contact";
         });
     });
 
