@@ -23,7 +23,6 @@ $(".contactheader").click(function () {
             return $contactcontent.is(":visible") ? "Less" : "Contact";
         });
     });
-
 });
 $(".aboutheader").click(function () {
 
