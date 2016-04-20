@@ -6,13 +6,21 @@ margin:0;
 padding:0;
 vertical-align:baseline;
 }
+h3{
+	text-decoration: underline;
+}
 *{
 	font-family: 'Alegreya Sans SC', sans-serif;
 
 }
+.sectionTitle{
+	font-size: .9em;
+}
+#contactDetails{
+	font-size: 1em;}
 li{
  list-style-type: none;
- size:12px;
+ font-size:.7em;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
@@ -151,7 +159,7 @@ section:last-child {
 	column-count:3;
 	margin-bottom: 15px;
 	padding-right:10px;
-	font-size: .5em;
+	font-size: .9em;
 	color: #444;
 }
 
@@ -229,6 +237,8 @@ section:last-child {
 		line-height: .8em;
 		margin-bottom: 4px;
 	}
+
+ont-size: 2em;
 }
 
 @media print {
