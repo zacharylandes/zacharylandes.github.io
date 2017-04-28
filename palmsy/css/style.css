@@ -54,9 +54,10 @@
   position: relative;
 }
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: avenir, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5em;
+  color: #2D3036;
   background: #2D3036 url(img/dummies/pattblack.png) repeat-x center 150px;
 }
 body a {
@@ -90,6 +91,11 @@ h2 {
 }
 h3 {
   font-size: 30px;
+  margin-top:20px;
+}
+ #contactemail a, #contactemail  {
+  color: #2D3036;
+
 }
 h4 {
   font-size: 24px;
@@ -500,20 +506,20 @@ p{
 .aboutlist {
  font-size: 17px;
  font-family: avenir;
-  border-radius: 3px;
-   border: 2px solid black;
-   background-color: #7D2027;
-   color: #f3e4c8;;
-   width: 7em ;
-   height: 30px;
-   margin: 10px 20px 10px 10px;
-
-  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.1);
+border-radius: 3px;
+ border: 2px solid black;
+ background-color: #7D2027;
+ color: #f3e4c8;;
+ width: 7em ;
+ height: 30px;
+ margin: 10px;
+ padding-top: 5px;
+box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.1);
 }
-.maillist{
-  font-size: 30px;
-  padding: 5px;
 
+.maillist{
+  font-size: 20px;
+  padding: 5px;
   font-family: avenir;
    border-radius: 3px;
     border: 2px solid black;
