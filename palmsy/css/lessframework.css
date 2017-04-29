@@ -17,7 +17,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
   width: 940px;
 }
 /* Defaul tNav   ----------------------------------------------------*/#comboNav {
-  display: none;
+
 }
 #nav {
   display: block;
@@ -37,13 +37,13 @@ px      68    160    252    344    436    528    620    712    */
     display: block;
   }
   #comboNav {
-    display: none;
+
   }
   #nav li {
     word-spacing: -0.1em;
     font-size: 16px;
   }
-  /* TABLE ISOTOPE ----------------------------------------------------*/.feature {
+  /* TABLE ISOTOPE ----------------------------------------------------*/.feature,  article {
     width: 732px;
     /* 712 + 20 gap */
 
@@ -64,11 +64,14 @@ px      68    160    252    344    436    528    620    712    */
   #posts-list article {
     padding: 15px;
   }
+  #posts-list article img{
+    max-width: : 80px;
+  }
   #posts-list article .tape {
     left: 150px;
   }
   #posts-list article .excerpt .post-heading {
-    max-width: 330px;
+    max-width: 130px;
   }
   /* TABLET PORTFOLIO ----------------------------------------------------*/.portfolio-content .project-content {
     float: left;
@@ -129,11 +132,19 @@ px      68    160    252    */
   h6 {
     font-size: 14px;
   }
-  /* MOBILE NAV  ----------------------------------------------------*/#nav {
-    display: none;
+  /* MOBILE NAV  ----------------------------------------------------*/
+  #nav {
+    height: 300px;
+    text-align: center;  /* align the inline(-block) elements horizontally */
+    font: 0/0 a;   }
+  #nav li{
+    font-size: 15px;
+    display: inline-block;
+   vertical-align: middle;
   }
   #comboNav {
-    display: block;
+
+
   }
   /* MOBILE Logo ----------------------------------------------------*/#logo {
     width: 256px;
@@ -154,11 +165,11 @@ px      68    160    252    */
     background: #f3e4c8;
     height: auto;
   }
-  .feature {
+  .feature , article{
     width: 252px;
     margin-left: 0px;
   }
-  .feature li {
+  .feature li, article li {
     width: 252px;
     margin-left: 0px;
   }
@@ -178,8 +189,19 @@ px      68    160    252    */
   #posts-list {
     width: 252px;
   }
-  #posts-list article {
-    padding: 15px;
+   article {
+     padding: auto;
+    margin: auto;
+
+  }
+
+  article img{
+    display: none;
+  }
+  article li {
+    max-width: 80px;
+    margin-left: 30px;
+    max-height: 30px;
   }
   #posts-list article .tape {
     left: 66px;
@@ -260,23 +282,28 @@ px      68    160    252    344    436    */
     width: 100%;
   }
   /* WIDE MOBILE NAV  ----------------------------------------------------*/#nav {
-    display: none;
+
+  vertical-align: middle;
   }
   #comboNav {
     display: block;
   }
   /* WIDE MOBILE HEALINE ----------------------------------------------------*/.headline {
     font-family:  avenir;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.3em;
   }
   /* WIDE MOBILE ISOTOPE ----------------------------------------------------*/.feature {
     width: 436px;
     margin-left: 0px;
   }
-  .feature li {
+  .feature li, article li {
     width: 436px;
+    display: block;
     margin-left: 0px;
+  }
+   article img {
+display: none;
   }
   .feature li .thumb {
     width: 416px;
@@ -288,12 +315,13 @@ px      68    160    252    344    436    */
   #posts-list {
     width: 436px;
   }
-  #posts-list article {
+  #posts-list article li {
     padding: 15px;
   }
-  #posts-list article .tape {
-    left: 156px;
+  #posts-list article img{
+    max-width: : 15px;
   }
+
   #posts-list article .feature-image .entry-date {
     bottom: -66px;
     right: auto;
