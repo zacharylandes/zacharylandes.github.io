@@ -43,7 +43,7 @@ px      68    160    252    344    436    528    620    712    */
     word-spacing: -0.1em;
     font-size: 16px;
   }
-  /* TABLE ISOTOPE ----------------------------------------------------*/.feature,  article {
+  /* TABLE ISOTOPE ----------------------------------------------------*/.feature {
     width: 732px;
     /* 712 + 20 gap */
 
@@ -64,8 +64,8 @@ px      68    160    252    344    436    528    620    712    */
   #posts-list article {
     padding: 15px;
   }
-  #posts-list article img{
-    max-width: : 80px;
+ article img{
+    max-width:  220px;
   }
   #posts-list article .tape {
     left: 150px;
