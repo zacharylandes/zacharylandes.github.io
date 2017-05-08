@@ -20,7 +20,7 @@
   margin: 0 8px 0 0;
   padding: 10px 10px;
   background: #585246;
-  color: #f3e4c8;
+  color: #fae199;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -284,7 +284,7 @@
 }
 .accordion-trigger {
   text-decoration: none;
-  color: #f3e4c8;
+  color: #fae199;
   font-weight: bold;
   padding: 5px 10px;
   cursor: pointer;
@@ -306,7 +306,7 @@
 /* TOGGLE -------------------------------------------------*/
 .toggle-trigger {
   text-decoration: none;
-  color: #f3e4c8;
+  color: #fae199;
   font-weight: bold;
   cursor: pointer;
   overflow: hidden;
@@ -381,7 +381,7 @@ ul.tabs a span {
 ul.tabs a {
   text-decoration: none;
   color: #444444;
-  background: #f3e4c8;
+  background: #fae199;
 }
 ul.tabs a:active {
   outline: none;

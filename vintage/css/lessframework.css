@@ -84,7 +84,7 @@ px      68    160    252    344    436    528    620    712    */
     margin-right: 20px;
   }
   .related-projects .related-list li .thumb {
-    background: #f3e4c8;
+    background: #fae199;
     padding: 10px;
     display: block;
     line-height: 0em;
@@ -151,7 +151,7 @@ px      68    160    252    */
   }
   /* MOBILE ISOTOPE ----------------------------------------------------*/#filter-buttons {
     font-size: 12px;
-    background: #f3e4c8;
+    background: #fae199;
     height: auto;
   }
   .feature {
@@ -221,7 +221,7 @@ px      68    160    252    */
     width: 252px;
     float: left;
     margin-right: 20px;
-    border-bottom: 1px solid #f3e4c8;
+    border-bottom: 1px solid #fae199;
     padding-bottom: 30px;
     margin-bottom: 30px;
   }
