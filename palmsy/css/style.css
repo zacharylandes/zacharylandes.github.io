@@ -17,10 +17,10 @@
 /* aditional */
 /* Fonts ----------------------------------------------------*//* Here you go ie */
 @font-face {
-  font-family: ' avenir';
+  font-family: ' junge';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/ avenir-webfont.eot');
+  src: url('../fonts/avenir-webfont.eot');
 }
 @font-face {
   font-family: ' avenir';
@@ -33,7 +33,7 @@
   font-family: ' avenir';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/ avenir-webfont.ttf');
+  src: url('../fonts/avenir-webfont.ttf');
 }
 /* GENERAL ------------------------------------------------------------*/
 .
@@ -84,7 +84,7 @@ font-family: 'avenir', cursive;
 }
 h1 {
   font-size: 42px;
-  text-decoration: underline;
+
 }
 h2 {
   font-size: 36px;
@@ -229,7 +229,7 @@ nav {
 }
 #nav > li ul {
   font-size: 14px;
-  font-family: Avenir;
+  font-family: avenir;
   text-align: left;
   margin-top: 19px;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.1);
@@ -495,7 +495,7 @@ nav {
   left:-20px;
   height: 35px;
 }
-#posts-list article .feature-image {
+ .feature-image {
   position: relative;
   display:flex;
    justify-content: space-around ;
@@ -515,9 +515,9 @@ border-radius: 3px;
  height: 30px;
  margin: 10px;
  padding-top: 5px;
+   margin-left: 20px;
 box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.1);
 }
-
 .maillist{
   font-size: 20px;
   padding: 5px;
@@ -538,18 +538,23 @@ a:link, article li a:visited,  a:hover, a:active {
  #bandtext{
    position: relative;
    color: #963724;
-   font-family: avenir;
+  
+   font-family: 'david libre';
    display: inline-block;
    text-align: center;
-
-
-
 }
-#posts-list article .feature-image img {
 
-     box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.1);
+#dance{
+  width: 25px;
+  height: 35px;
+  display: flex;
 
-right: 0;
+  margin-left: : 0;
+  box-shadow: 0px 0px 0 0 rgba(0, 0, 0, 0);
+}
+#bandphoto{
+  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.1);
+  right: 0;
 }
 .ribbon{
     background: url(../img/ribbon1.png) no-repeat top left;
@@ -727,7 +732,7 @@ footer h4,
 footer h5,
 footer h6 {
 
-  font-family:  avenir;
+  font-family: 'avenir';
   word-spacing: -0.1em;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
   line-height: 1.3em;

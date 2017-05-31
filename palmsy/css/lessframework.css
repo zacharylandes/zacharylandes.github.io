@@ -64,8 +64,12 @@ px      68    160    252    344    436    528    620    712    */
   #posts-list article {
     padding: 15px;
   }
- article img{
-    max-width:  220px;
+ #bandphoto{
+    max-width:  180px;
+    margin-top: 50%;
+  }
+  #dance{
+    margin-top: 10%;
   }
   #posts-list article .tape {
     left: 150px;
@@ -156,7 +160,7 @@ px      68    160    252    */
     display: none;
   }
   /* MOBILE HEALINE ----------------------------------------------------*/.headline {
-    font-family:  avenir;
+    font-family:  andika;
     font-size: 24px;
     line-height: 1.3em;
   }
@@ -190,21 +194,17 @@ px      68    160    252    */
     width: 252px;
   }
    article {
-     padding: auto;
+    padding: auto;
     margin: auto;
 
   }
 
-  article img{
+  #bandphoto{
     display: none;
   }
-  article li {
-    max-width: 80px;
-    margin-left: 30px;
-    max-height: 30px;
-  }
-  #posts-list article .tape {
-    left: 66px;
+  #posts-list article li {
+
+    margin-left: 0;
   }
   #posts-list article .feature-image .entry-date {
     bottom: -66px;
@@ -289,7 +289,7 @@ px      68    160    252    344    436    */
     display: block;
   }
   /* WIDE MOBILE HEALINE ----------------------------------------------------*/.headline {
-    font-family:  avenir;
+    font-family:  andika;
     font-size: 28px;
     line-height: 1.3em;
   }
@@ -316,7 +316,7 @@ display: none;
     width: 436px;
   }
   #posts-list article li {
-    padding: 15px;
+
   }
   #posts-list article img{
     max-width: : 15px;
