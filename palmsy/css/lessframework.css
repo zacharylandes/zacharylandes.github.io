@@ -235,6 +235,7 @@ px      68    160    252    */
   .portfolio-content .project-info {
     width: 160px;
   }
+
   /* MOBILE RELATED PROJECTS ------------------------------------------------------------*/
   .related-projects .related-list li {
     width: 252px;
@@ -300,7 +301,12 @@ px      68    160    252    344    436    */
   .feature li, article li {
     width: 436px;
     display: block;
-    margin-left: 0px;
+
+  }
+  .feature li .thumb img {
+    max-width: 100%;
+    margin-left: 14%;
+
   }
    article img {
 display: none;

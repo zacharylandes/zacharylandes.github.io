@@ -300,7 +300,7 @@ nav {
 }
 .feature li .thumb img {
   max-width: 100%;
-  float: center;
+
 }
 .feature li .caption {
   padding: 10px 10px 20px 10px;
@@ -538,7 +538,7 @@ a:link, article li a:visited,  a:hover, a:active {
  #bandtext{
    position: relative;
    color: #963724;
-  
+
    font-family: 'david libre';
    display: inline-block;
    text-align: center;
@@ -547,8 +547,8 @@ a:link, article li a:visited,  a:hover, a:active {
 #dance{
   width: 25px;
   height: 35px;
-  display: flex;
 
+  display: flex;
   margin-left: : 0;
   box-shadow: 0px 0px 0 0 rgba(0, 0, 0, 0);
 }
