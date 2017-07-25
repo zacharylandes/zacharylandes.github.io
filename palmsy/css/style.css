@@ -16,24 +16,24 @@
 /* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//* IMPORT ------------------------------------------------------------*/
 /* aditional */
 /* Fonts ----------------------------------------------------*//* Here you go ie */
-@font-face {
+/*@font-face {
   font-family: ' junge';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/avenir-webfont.eot');
+  src: url('../Lato-webfont.eot');
 }
 @font-face {
-  font-family: ' avenir';
+  font-family: ' Lato';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/ IowanOldSt_BT_Bold.ttf');
+  src: url('../IowanOldSt_BT_Bold.ttf');
 }
 /* For real web browsers */
-@font-face {
-  font-family: ' avenir';
+/*@font-face {
+  font-family: ' Lato';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/avenir-webfont.ttf');
+  src: url('../Lato-webfont.ttf');
 }
 /* GENERAL ------------------------------------------------------------*/
 .
@@ -54,7 +54,7 @@
   position: relative;
 }
 body {
-  font-family: avenir, Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5em;
   color: #2D3036;
@@ -79,11 +79,11 @@ body p {
 #main h4,
 #main h5,
 #main h6 {
-font-family: 'avenir', cursive;
+font-family: 'Lato', cursive;
   line-height: 1.3em;
 }
 h1 {
-  font-size: 42px;
+  font-size: 32px;
 
 }
 h2 {
@@ -114,7 +114,7 @@ h6 {
 }
 /*header #logo:hover {
   opacity: 0.8;
-  font-family:  avenir;
+  font-family:  Lato;
   color: #f3e4c8;
 }*/
 .leftbar{
@@ -157,7 +157,7 @@ h6 {
   overflow: hidden;
   height: 1em;
   font-size: 6em;
-  font-family:  avenir;
+  font-family:  Lato;
 
 
 }
@@ -166,7 +166,7 @@ h6 {
   overflow: hidden;
   height: .5em;
   font-size: 6em;
-  font-family:  avenir;
+  font-family:  Lato;
 
 
 }
@@ -192,7 +192,7 @@ nav {
   float: left;
   position: relative;
   left: 50%;
-  font-family:  avenir;
+  font-family:  Lato;
   word-spacing: -0.1em;
   font-size: 20px;
   /* sub navigation -----------------------------------------------------*/
@@ -229,7 +229,7 @@ nav {
 }
 #nav > li ul {
   font-size: 14px;
-  font-family: avenir;
+  font-family: Lato;
   text-align: left;
   margin-top: 19px;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.1);
@@ -268,7 +268,7 @@ nav {
 
   color: black;
   text-align: center;
-  font-family:  avenir;
+  font-family:  Lato;
   padding: 1em;
   font-size: 48px;
   line-height: 1.3em
@@ -279,7 +279,7 @@ nav {
 
 
 #topbutton{
-   font-family:  avenir;
+   font-family:  Lato;
 }
 /* FEATURE ----------------------------------------------------*/.feature {
   width: 960px;
@@ -303,9 +303,15 @@ nav {
 
 }
 .feature li .caption {
-  padding: 10px 10px 20px 10px;
+  padding: 10px 10px 20px 0px;
   text-align: center;
   color: #2D3036;
+}
+.feature li .caption1 {
+  padding: 10px 10px 20px 0px;
+  text-align: center;
+  color: #2D3036;
+  font-size: 15px;
 }
 .feature li a {
   color: #cb5432;
@@ -325,7 +331,7 @@ nav {
   width: 60px;
   background: #f3e4c8;
   float: left;
-  font-family:  avenir;
+  font-family:  Lato;
   padding-top: 10px;
 }
 .feature li .thumb .date span {
@@ -504,9 +510,12 @@ nav {
 p{
   text-indent: 20px;
 }
-.aboutlist {
+.listbox{
+  margin-top: 30px;
+}
+  .aboutlist {
  font-size: 17px;
- font-family: avenir;
+ font-family: Lato;
 border-radius: 3px;
  border: 2px solid black;
  background-color: #7D2027;
@@ -515,13 +524,13 @@ border-radius: 3px;
  height: 30px;
  margin: 10px;
  padding-top: 5px;
-   margin-left: 20px;
+   margin-left: 50px;
 box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.1);
 }
 .maillist{
   font-size: 20px;
   padding: 5px;
-  font-family: avenir;
+  font-family: Lato;
    border-radius: 3px;
     border: 2px solid black;
     background-color: #963724;
@@ -554,6 +563,7 @@ a:link, article li a:visited,  a:hover, a:active {
 }
 #bandphoto{
   box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.1);
+  margin-top:60px;
   right: 0;
 }
 .ribbon{
@@ -565,7 +575,7 @@ a:link, article li a:visited,  a:hover, a:active {
   width: 51px;
   height: 66px;
   background: ;
-  font-family:  avenir;
+  font-family:  Lato;
   font-size: 20px;
   line-height: 1.1em;
   text-align: center;
@@ -579,7 +589,7 @@ a:link, article li a:visited,  a:hover, a:active {
   color: #585246;
 }
 #posts-list article .excerpt .post-heading {
-  font-family:  avenir;
+  font-family:  Lato;
   font-size: 36px;
   line-height: 1.1em;
   color: #585246;
@@ -732,7 +742,7 @@ footer h4,
 footer h5,
 footer h6 {
 
-  font-family: 'avenir';
+  font-family: 'Lato';
   word-spacing: -0.1em;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
   line-height: 1.3em;
