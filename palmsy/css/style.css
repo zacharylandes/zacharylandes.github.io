@@ -303,12 +303,12 @@ nav {
 
 }
 .feature li .caption {
-  padding: 10px 10px 20px 0px;
+  padding: 20px 0px 20px 0px;
   text-align: center;
   color: #2D3036;
 }
 .feature li .caption1 {
-  padding: 10px 10px 20px 0px;
+  padding: 20px 0px 20px 0px;
   text-align: center;
   color: #2D3036;
   font-size: 14px;
@@ -338,6 +338,7 @@ nav {
   display: block;
   text-align: center;
   color: #7D2027;
+  margin-top: 3px;
   font-size: 20px;
   line-height: 20px;
 }

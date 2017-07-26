@@ -137,7 +137,7 @@ px      68    160    252    */
     font-size: 14px;
   }
   article img{
-      width: 25px;
+      width: 35px;
     }
 
   /* MOBILE NAV  ----------------------------------------------------*/
@@ -206,10 +206,7 @@ px      68    160    252    */
   #bandphoto{
     display: none;
   }
-  #posts-list article li {
 
-
-  }
   #posts-list article .feature-image .entry-date {
     bottom: -66px;
     right: auto;
@@ -286,6 +283,7 @@ px      68    160    252    344    436    */
   #logo img {
     width: 100%;
   }
+
  WIDE MOBILE NAV  ----------------------------------------------------*/#nav {
 
   vertical-align: middle;
