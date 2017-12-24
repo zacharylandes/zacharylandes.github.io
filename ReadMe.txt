@@ -1,45 +1,51 @@
-Worthy - Free Bootstrap Template
+Overflow by HTML5 UP
+html5up.net | @n33co
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-Worhty is a Multipurpose One Page Template based on Bootstrap 3 Framework. 
-You can use it for corporate, business and agency webpages as well as 
-portfolio and personal webpages.
 
-If you like the template and find it useful, please help us spread the word :-)
+This is Overflow, a single page responsive site template by me, AJ, for HTML5 UP.
+As you can tell it's a bit unusual (it was inspired by a flowchart I was working
+on a few months back), but I think it'd make for a pretty cool portfolio. Includes
+a pop-up gallery, styling for all basic page elements, a handy configuration
+(see the top of js/init.js), and some experimental stuff I've been messing with
+lately (like the parallax background effect).
+	
+Demo images* courtesy of the talented, the awesome, THE one and only Felicia Simion,
+a photographer whose works will make your head spin in awe. See more of it here:
 
-Theme version: v1.0
-Release Date: 13 Nov 2014
-Author: HtmlCoder (http://htmlcoder.me)
-Contact: http://htmlcoder.me/contact
+http://ineedchemicalx.deviantart.com/
 
-License: Creative Commons Attribution 3.0 License (https://creativecommons.org/licenses/by/3.0/)
+(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
+and/or use any of Felicia's work without her explicit permission!)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+AJ
+n33.co @n33co dribbble.com/n33
 
 
 Credits:
-=======================================================================
 
-Demo images
-------------------------------------------------------
-Unsplash by Crew - http://unsplash.com/
+	Demo images:
+		Felicia Simion (ineedchemicalx.deviantart.com)
+			"Sleepless in Vienna" (ineedchemicalx.deviantart.com/art/Sleepless-in-Vienna-322880007)
+			"Time goes by too fast" (ineedchemicalx.deviantart.com/art/Time-goes-by-too-fast-335982438)
+			"Kingdom of the Wind" (ineedchemicalx.deviantart.com/art/Kingdom-of-the-Wind-348268044)
+			"Ad infinitum" (ineedchemicalx.deviantart.com/art/Ad-infinitum-354203162)
+			"Dressed in Clarity" (ineedchemicalx.deviantart.com/art/Dressed-in-Clarity-331333716)
+			"Raven" (ineedchemicalx.deviantart.com/art/Raven-306468505)
+			"I'll have a cup of Disneyland, please" (ineedchemicalx.deviantart.com/art/I-ll-have-a-cup-of-Disneyland-please-325596442)
+			"Cherish" (ineedchemicalx.deviantart.com/art/Cherish-320041163)
+			"Different." (ineedchemicalx.deviantart.com/art/Different-353708988)
+			"History was made here" (ineedchemicalx.deviantart.com/art/History-was-made-here-366723812)
+			"People come and go and walk away" (ineedchemicalx.deviantart.com/art/People-come-and-go-and-walk-away-284244677)
+			
+	Icons:
+		Font Awesome (fortawesome.github.com/Font-Awesome)
 
-Fonts
-------------------------------------------------------
-Font Awesome by Dave Gandy - http://fortawesome.github.io/Font-Awesome/
-Google Fonts - http://www.google.com/fonts
-
-Resources
-------------------------------------------------------
-Bootstrap Framework by @mdo and @fat - http://getbootstrap.com/
-jQuery - https://jquery.org/
-jQuery Appear - by bas2k - https://github.com/bas2k/jquery.appear/
-Modernizr - http://modernizr.com/
-Animate CSS by Daniel T. Eden - http://daneden.github.io/animate.css/
-Isotope Jquery plugin by metafizzy.co - http://isotope.metafizzy.co/
-Backstrech by Scott Robbin - http://srobbin.com/jquery-plugins/backstretch/
+	Other:
+		jQuery (jquery.com)
+		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+		CSS3 Pie (css3pie.com)
+		background-size polyfill (github.com/louisremi)
+		jquery.poptrox (n33.co)
+		jquery.scrolly (n33.co)
+		skel (n33.co)
