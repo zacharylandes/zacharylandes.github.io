@@ -5,11 +5,11 @@
 	body
 	{
 		background-color:		black;
-		background-image:		url('images/overlay.png'),			url('../images/nightsky2.jpg');
-		background-repeat:		repeat,								no-repeat;
-		background-size:		auto,								cover;
-		background-position: 	top left,							center 0;
-		background-attachment:	fixed,								fixed;
+		background-image:				url('../images/nightsky2.jpg');
+		background-repeat:										no-repeat;
+		background-size:										120%;
+		background-position: 						 center;
+		background-attachment:fixed;
 	}
 
 		body.is-scroll
@@ -86,7 +86,7 @@
 
 	a
 	{
-		color: #35b88f;
+		/* color: #35b88f; */
 		text-shadow: 0 0 0.5px rgba(53,184,143,0.25);
 		-moz-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		-webkit-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
@@ -94,7 +94,7 @@
 		-ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(53,184,143,0.5);
+		/* border-bottom: dotted 1px rgba(53,184,143,0.5); */
 	}
 
 		a:hover
@@ -194,9 +194,7 @@
 #knit{
 	height: 130px;
 	width: 300px;
-	margin: 90px;
-	/* flex-direction: column; */
-	/* justify-content: center; */
+	margin: 120px 90px 90px 90px;
 	align-items: center;
 
 }
@@ -282,6 +280,7 @@
 
 					ul.icons a
 					{
+						color:white;
 						display: inline-block;
 						width: 2.5em;
 						height: 2.5em;
@@ -289,7 +288,14 @@
 						text-align: center;
 						border: 0;
 					}
+			ul.icons a:hover{
+				color: #35b88f;
 
+			}
+			.container ul.icons {
+					display: flex;
+					justify-content:center;
+						}
 			ul.menu
 			{
 				cursor: default;
@@ -601,16 +607,14 @@
 
 			.box :last-child
 			{
-				margin-bottom: 0;
+				/* margin-bottom: 0; */
 			}
 
 			.box.style1
 			{
 				color: #fff;
 				background: url('images/06.jpg') no-repeat;
-				    background-size: 100% auto;
-
-				/* border: 2px solid white; */
+				 background-size: 100% auto;
 				padding: 3em;
 			}
 
@@ -690,11 +694,22 @@
 
 				.box.style2 header
 				{
+					height: 120px;
 					display: inline-block;
-					background: #fff;
-					padding: 2em 3em 2em 3em;
-					margin: 0;
+					background-image: url('images/07.jpg') center;
+  				transition: all 0.2s ease;
+					padding: 0 3.5em 0 3.5em;
+					border-bottom: 1px solid white;
+					border-top: 1px solid white;
+					border-radius: 20px;
 				}
+	
+
+				.box.style2 :hover {
+					background: none;
+				}
+
+
 
 					.box.style2 header p
 					{
@@ -705,6 +720,11 @@
 				{
 					position: relative;
 					padding: 40px 0 0px 0;
+				}
+				.box.style2 a
+				{
+					text-decoration: none;
+					color: white;
 				}
 
 					.box.style2 .inner:after
@@ -740,9 +760,10 @@
 
 					.box.style2 .inner .image
 					{
+						background-image: url('images/03.jpg')
 						position: relative;
 						z-index: 1;
-						padding: 20px;
+						/* padding: 20px; */
 					}
 
 			.box.style3
@@ -754,6 +775,15 @@
 				.box.style3 header
 				{
 					text-align: center;
+				}
+
+				#explore{
+					border-radius: 3em;
+					font-weight: 400;
+
+					font-size: 13px;
+					text-align: center;
+
 				}
 
 /*********************************************************************************/
@@ -872,7 +902,8 @@
 		text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
 		text-align: center;
 		/* border: 2px solid white; */
-		background:  url('images/06.jpg') bottom center no-repeat;
+		background:  url('images/01.jpg') ;
+		background-size: 100%;
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
@@ -1144,12 +1175,7 @@
 	100% { width: 740px; height: 850px; opacity: 1; margin: 20px; }
 }
 
-/* body { margin: 0; height: 100%; margin-right: 2em;  background: #110; } */
-/* dl { float: left; } */
-dd a {
-  /* background: #fff; display: inline-block; */
-	/* transition: 4s box-shadow ease-in; */
-}
+
 /* dt { margin-left: 1.2rem; width: 150px; margin-top: 1.2rem;  } */
 dt img { width: 150px; height: 150px; }
 dd a img { width: 640px; height: 927px;  }
