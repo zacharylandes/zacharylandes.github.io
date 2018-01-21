@@ -272,6 +272,10 @@
 			{	z-index: 2;
 				cursor: default;
 			}
+			.icon{
+				width: 30px;
+				color: black;
+			}
 			.media {
 				display: flex;
 				justify-content: space-between;
