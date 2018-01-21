@@ -269,8 +269,17 @@
 				}
 
 			ul.icons
-			{
+			{	z-index: 2;
 				cursor: default;
+			}
+			.media {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				position: fixed;
+				bottom: 0;
+
 			}
 
 				ul.icons li
@@ -689,21 +698,26 @@
 
 			.box.style2
 			{
+				display: flex;
 				text-align: center;
+				justify-content:center;
+				align-items: center;
 			}
 
-				.box.style2 header
-				{
-					height: 120px;
-					display: inline-block;
-					background-image: url('images/07.jpg') center;
+				.box.style2 button {
+					text-align: center;
   				transition: all 0.2s ease;
-					padding: 0 3.5em 0 3.5em;
-					border-bottom: 1px solid white;
-					border-top: 1px solid white;
-					border-radius: 20px;
+					padding:30px;
+					height: 86px;
+					/* padding: 2em; */
+					width: 250px;
+					font-size: 22px;
+					background-color:black;
+					color:white;
+					border: 1px solid white;
+					border-radius: 80px;
 				}
-	
+
 
 				.box.style2 :hover {
 					background: none;
@@ -1170,9 +1184,9 @@
 
 @keyframes photopresent {
 	0% { width: 0;  height: 0; opacity: 0;  }
-	30% { width: 640px; height: 0; opacity: 0;  }
-	60% { width: 640px; height: 627px; opacity: 0; margin: 20px; }
-	100% { width: 740px; height: 850px; opacity: 1; margin: 20px; }
+	30% { width: 240px; height: 0; opacity: 0;  }
+	/* 60% { width: 540px; height: 627px; opacity: 0; margin: 20px; } */
+	100% { width: 650px; height: 820px; opacity: 1; margin: 20px; }
 }
 
 
