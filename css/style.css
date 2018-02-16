@@ -21,7 +21,14 @@
 			text-shadow: 5px 3px 2px #363636;
 		}
 
+	#gcrop img {
+		/* margin-top: 7%; */
+		/* height: 200px; */
+	}
 
+	#first{
+		/* padding:.5em; */
+	}
 
 		body.is-loading *
 		{
