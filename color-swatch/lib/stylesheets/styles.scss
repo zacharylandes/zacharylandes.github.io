@@ -1,0 +1,97 @@
+$primary: #0971B2;
+$light: #FFFFFF;
+$dark: #000000;
+$default-border: 1px solid $dark;
+
+%center {
+  margin: auto;
+  width: 65%
+}
+
+%rainbow {
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+main {
+  font-family: Helvetica;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  @extend %rainbow;
+  .text-submission {
+    h2 {
+    }
+    textarea {
+      @extend %center;
+      display: block;
+      height: 100px;
+      text-align: center;
+    }
+    button {
+      @extend %center;
+      background-color: $primary;
+      color: $light;
+      cursor: pointer;
+      margin-top: 20px;
+      padding: 20px;
+      transition: all .2s ease-in-out;
+      &:hover {
+        background-color: $dark;
+      }
+    }
+  }
+  .color-data {
+    .top-color {
+      border: $default-border;
+      display: inline-block;
+      line-height: 30px;
+      min-width: 100px;
+    }
+    .colorized-text {
+      @extend %center;
+      border: $default-border;
+      height: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      .swatch {
+        border: $default-border;
+        display: inline-block;
+        min-height: 100px;
+        min-width: 100px;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
