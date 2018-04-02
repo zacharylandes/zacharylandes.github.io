@@ -78,6 +78,61 @@ var _colors2 = _interopRequireDefault(_colors);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+$(window).on('load', function () {
+    fetch('https://color-swatch-api.herokuapp.com/api/v1/top_color').then(function (response) {
+        return response.json();
+    }).then(function (myJson) {
+        $('.top-color').html('' + myJson.value);
+    });
+});
+
+$('textarea').keydown(function (event) {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+        fillColors();
+    }
+});
+$('button').click(function () {
+    event.preventDefault();
+    fillColors();
+});
+
+var fillColors = function fillColors() {
+    var text = $('textarea').val().toLowerCase();
+    text = text.replace(/[,.? ]+/g, "  ").trim();
+    text = text.split(" ");
+    $('.colorized-text').html('');
+    var colors = Object.keys(_colors2.default);
+    text.forEach(function (word) {
+        if (colors.includes(word)) {
+            postColor(word);
+        }
+    });
+    var textUnique = Array.from(new Set(text));
+    console.log(textUnique);
+    textUnique.forEach(function (word) {
+        if (colors.includes(word)) {
+            $('.colorized-text').append('<div class="swatch" style=\'background-color:' + _colors2.default[word] + ';\'></div>');
+        }
+    });
+};
+
+var postColor = function postColor(color) {
+    var data = { color: { value: '' + color } };
+    return fetch('https://color-swatch-api.herokuapp.com/api/v1/colors', {
+        body: JSON.stringify(data), // must match 'Content-Type' header
+        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: 'same-origin', // include, same-origin, *omit
+        headers: {
+            'content-type': 'application/json'
+        },
+        method: 'POST',
+        mode: 'cors'
+    }).then(function (response) {
+        return console.log(response.json());
+    });
+};
+
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
