@@ -29,6 +29,9 @@
 	#first{
 		/* padding:.5em; */
 	}
+	#bottom{
+		margin-bottom:60px;
+	}
 
 		body.is-loading *
 		{
