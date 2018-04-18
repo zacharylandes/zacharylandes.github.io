@@ -22,52 +22,60 @@
 		</noscript>
 	</head>
 	<body>
+	<ul class="icons media">
+		<li><a href="https://www.facebook.com/lachzandes" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+		<li><a href="https://www.linkedin.com/in/zacharylandes/" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+		<li><a href="https://github.com/zacharylandes" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+		<li><a href="mailto:zach.g.landes@gmail.com" class="icon fa-google" target="_blank"><span class="label">Gmail</span></a></li>
+		<li><a href="resume.html" class="icon  fa-id-card" target="_blank"><span class="label">Resume</span></a></li>
+	</ul>
+	<section id="header">
+		<header>
+		<img class = "icon" src="images/iconwhite.png"  target="_blank">
+			<h1>Zachary Landes</h1>
+			<p>Back End Developer</p>
+		</header>
+		<footer>
+			<a href="#first" class="button style2 scrolly scrolly-centered"  target="_blank">Portfolio</a>
+		</footer>
+	</section>
 
-		<ul class="icons media">
-			<li><a href="https://www.facebook.com/lachzandes" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-			<li><a href="https://www.linkedin.com/in/zacharylandes/" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-			<li><a href="https://github.com/zacharylandes" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-			<li><a href="mailto:zach.g.landes@gmail.com" class="icon fa-google" target="_blank"><span class="label">Gmail</span></a></li>
-			<li><a href="resume.html" class="icon  fa-id-card" target="_blank"><span class="label">Resume</span></a></li>
-		</ul>
-		<section id="header">
+	<section id="banner">
+		<header>
+			<h2>Experience</h2>
+		</header>
+		<p> Ruby, Rails, Sinatra, Javascript, Node.js<br />
+		</p>
+		<footer>
+			<a href="resume.html" class="button style2 scrolly"target="_blank">Resume</a>
+		</footer>
+	</section>
+	<article id="first" class="container box style1 right" id="small-box">
+		<a href="https://pytdating.herokuapp.com/" class="image fit" target="_blank"><img src="images/blackwhite.jpg" alt="" /></a>
+		<div class="inner">
+			<header><h2>Meddle</h2></header>
+			<p class = "app-text">Find Love for your loved ones.</p>
+			<ul class="icons">
+				<li><a href="https://pytdating.herokuapp.com/" class="fa fa-eye "target="_blank" ></a></li>
+				<li><a href="https://github.com/zacharylandes/pytdating" class="icon fa-github " target="_blank"></a></li>
+			</ul>
+		</div>
+	</article>		
+	<article id="first" class="container box style1 left" id="small-box">
+		<a href="https://gedaride.herokuapp.com" class="image fit" target="_blank"><div id= "gcrop"><img src="images/euro.jpg" alt="" /></div></a>
+		<div class="inner">
 			<header>
-			<img class = "icon" src="images/iconwhite.png"  target="_blank">
-
-				<h1>Zachary Landes</h1>
-				<p>Back End Developer</p>
+				<h2>GedaRide<br /></h2>
+				<p class = "app-text">Get and post rides anywhere in the country.
+					Built in Rails with Ajax, Jquery, Geocoder, and the Stripe Api
+				</p>
 			</header>
-			<footer>
-				<a href="#first" class="button style2 scrolly scrolly-centered"  target="_blank">Portfolio</a>
-			</footer>
-		</section>
-
-		<!-- Banner -->
-			<section id="banner">
-				<header>
-					<h2>Experience</h2>
-				</header>
-				<p> Ruby, Rails, Sinatra, Javascript, Node.js<br />
-			 </p>
-				<footer>
-					<a href="resume.html" class="button style2 scrolly"target="_blank">Resume</a>
-				</footer>
-			</section>
-			<article id="first" class="container box style1 left" id="small-box">
-				<a href="https://gedaride.herokuapp.com" class="image fit" target="_blank"><div id= "gcrop"><img src="images/euro.jpg" alt="" /></div></a>
-				<div class="inner">
-					<header>
-						<h2>GedaRide<br /></h2>
-						<p class = "app-text">Get and post rides anywhere in the country.
-							Built in Rails with Ajax, Jquery, Geocoder, and the Stripe Api
-						</p>
-					</header>
-						<ul class="icons">
-							<li><a href="https://gedaride.herokuapp.com"  class= "fa fa-eye " target="_blank" ></a></li>
-							<li><a href = "https://github.com/zacharylandes/geda_ride" class="icon fa-github " target="_blank"></a></li>
-						</ul>
-				</div>
-			</article>
+				<ul class="icons">
+					<li><a href="https://gedaride.herokuapp.com"  class= "fa fa-eye " target="_blank" ></a></li>
+					<li><a href = "https://github.com/zacharylandes/geda_ride" class="icon fa-github " target="_blank"></a></li>
+				</ul>
+		</div>
+	</article>
 			<article id="first" class="container box style1 right" id="small-box">
 				<a href="https://found-sound.herokuapp.com" class="image fit" target="_blank"><div id= "gcrop"><img src="images/record.jpg" alt="" /></div></a>
 				<div class="inner">
@@ -95,19 +103,7 @@
 				</div>
 			</article>
 			<article class="container box style1 right">
-				<a href="https://zach-landes-ideabox.herokuapp.com/" class="image fit" target="_blank"><img src="images/intro-bg.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Idea Box</h2>
-					</header>
-					<p class = "app-text">Create ideas and tag them with images, gifs, and NyTimes articles.
-						Built in Rails using the Giphy, Carrierwave and NY Times Apis.</p>
-						<ul class="icons">
-							<li><a href="https://zach-landes-ideabox.herokuapp.com/" class="fa fa-eye "target="_blank" ></a></li>
-							<li><a href="https://github.com/zacharylandes/ideabox" class="icon fa-github " target="_blank"></a></li>
-						</ul>
-				</div>
-			</article>
+
 
 
 
