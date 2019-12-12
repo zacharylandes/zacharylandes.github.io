@@ -138,7 +138,7 @@ var luminance = d3.scale.sqrt()
     .clamp(true)
     .range([90, 20]);
 
-var svg = d3.select("#d3").append("svg")
+var svg = d3.select("body").append("svg")
     .attr("width", margin.left + margin.right)
     .attr("height", margin.top + margin.bottom)
   .append("g")
@@ -156,7 +156,7 @@ var arc = d3.svg.arc()
     .innerRadius(function(d) { return radius / (level + 1)  * d.depth; })
     .outerRadius(function(d) { return radius / (level + 1)  * (d.depth + 1) - 1; });
 
-d3.json("json/nca3_ch2_depth1.json", function(error, root) {
+d3.json("json/nca4_ch1_butterfly_1219.json", function(error, root) {
 //d3.json("json/example_gcis_d3_scoretree.json", function(error, root) {
   if (error) throw error;
 
@@ -201,15 +201,19 @@ d3.json("json/nca3_ch2_depth1.json", function(error, root) {
       //.style("stroke", function(d) { return d.stroke; })
       //.style("stroke-width", "1")
       .each(function(d) { this._current = updateArc(d); })
-      .on("click", zoomIn);
+      .on("click", function(d){ clicked(d) })
 
   path.append("title")
+
       .text(function(d) { return d.name })
 
   function zoomIn(p) {
     if (p.depth > 1) p = p.parent;
     if (!p.children) return;
     zoom(p, p);
+  }
+  function clicked(p) {
+    window.location = p.name;
   }
 
   function zoomOut(p) {
