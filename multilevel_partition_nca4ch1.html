@@ -49,6 +49,7 @@ circle {
 .legend-header{
   text-align: center;
 }
+text{color:black}
 
 .legend-text-box{
   display:flex;
@@ -63,6 +64,9 @@ h2{
 }
 b{
   font-size: 15px;
+}
+.label{
+  display:block;
 }
 .key-group{
   display:flex;
@@ -120,7 +124,6 @@ b{
     </div>
     <div id="d3"></div>
   </div>
-
 </div>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
@@ -138,7 +141,7 @@ var luminance = d3.scale.sqrt()
     .clamp(true)
     .range([90, 20]);
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#d3").append("svg")
     .attr("width", margin.left + margin.right)
     .attr("height", margin.top + margin.bottom)
   .append("g")
@@ -157,12 +160,8 @@ var arc = d3.svg.arc()
     .outerRadius(function(d) { return radius / (level + 1)  * (d.depth + 1) - 1; });
 
 d3.json("json/nca4_ch1_butterfly_1219.json", function(error, root) {
-//d3.json("json/example_gcis_d3_scoretree.json", function(error, root) {
   if (error) throw error;
 
-  // Compute the initial layout on the entire tree to sum sizes.
-  // Also compute the full name and fill color for each node,
-  // and stash the children so they can be restored as we descend.
   partition
       .value(function(d) { return d.size; })
       .nodes(root)
@@ -172,10 +171,8 @@ d3.json("json/nca4_ch1_butterfly_1219.json", function(error, root) {
         d.score = d.score;
         d.key = key(d);
         d.fill = fill(d);
-        //d.stroke = stroke(d);
       });
 
-  // Now redefine the value function to use the previously-computed sum.
   partition
       .children(function(d, depth) { return depth < level ? d._children : null; })
       .value(function(d) { return (level + 1) ; });
@@ -187,33 +184,33 @@ d3.json("json/nca4_ch1_butterfly_1219.json", function(error, root) {
   center.append("title")
       .data(partition.nodes(root).slice(0,1))
       .style("fill", function(d) { return d.fill; })
-      //.style("stroke", function(d) { return d.stroke; })
-      //.style("stroke-width", "1")
       .text(function(d) {
            return d.name;
       });
 
   var path = svg.selectAll("path")
       .data(partition.nodes(root).slice(1))
-    .enter().append("path")
+      .enter().append("path")
       .attr("d", arc)
       .style("fill", function(d) { return d.fill; })
-      //.style("stroke", function(d) { return d.stroke; })
-      //.style("stroke-width", "1")
       .each(function(d) { this._current = updateArc(d); })
-      .on("click", function(d){ clicked(d) })
+      .on("click", zoomIn)
 
-  path.append("title")
-
-      .text(function(d) { return d.name })
+  path.append("p")
+      .text("image")
+      .attr('class',"label")
 
   function zoomIn(p) {
+    if (!p.children){ clicked(p)}
     if (p.depth > 1) p = p.parent;
     if (!p.children) return;
     zoom(p, p);
   }
+
   function clicked(p) {
-    window.location = p.name;
+    var m = 'https://data-stage.globalchange.gov';
+    var url = new URL(p.name, m);
+    window.location = url;
   }
 
   function zoomOut(p) {
@@ -271,8 +268,11 @@ d3.json("json/nca4_ch1_butterfly_1219.json", function(error, root) {
           .style("fill-opacity", 1)
           .attrTween("d", function(d) { return arcTween.call(this, updateArc(d)); });
 
-      path.append("title")
+      path.append("text")
+          .attr("display","block")
           .text(function(d) { return d.name })
+          
+
     });
   }
 });
