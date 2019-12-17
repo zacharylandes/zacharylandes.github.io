@@ -170,7 +170,7 @@ var arc = d3.svg.arc()
     .innerRadius(function(d) { return radius / (level + 1)  * d.depth; })
     .outerRadius(function(d) { return radius / (level + 1)  * (d.depth + 1) - 1; });
 
-d3.json("json/nca4_ch6_butterfly_1219.json", function(error, root) {
+d3.json("json/nca4_ch23_butterfly_1219.json", function(error, root) {
   if (error) throw error;
 
   partition
