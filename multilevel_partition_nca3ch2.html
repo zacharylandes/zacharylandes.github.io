@@ -35,16 +35,16 @@ circle {
 }
 .legend{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 10px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border:1px solid black;
   border-radius: 8px;
-  height:370px;
-  width: 240px;
+  height:410px;
+  width: 260px;
   padding:10px;
-  padding-bottom:20px;
+  padding-bottom:30px;
 }
 .legend-header{
   text-align: center;
@@ -114,7 +114,7 @@ b{
           <div id ="very-good" class = "box"></div>
           <div class='legend-text-box'>
             <b> Very Good</b>
-          <div>Unrelated to proveance but enhances resources</div>
+          <div>Unrelated to provenance but enhances resources</div>
         </div>
       </div>
     </div>
@@ -227,6 +227,7 @@ d3.json("json/nca3_ch2_depth1.json", function(error, root) {
         outsideAngle = d3.scale.linear().domain([0, 2 * Math.PI]);
 
     function insideArc(d) {
+      console.log(d.depth)
       return p.key > d.key
           ? {depth: d.depth - 1, x: 0, dx: 0} : p.key < d.key
           ? {depth: d.depth - 1, x: 2 * Math.PI, dx: 0}
